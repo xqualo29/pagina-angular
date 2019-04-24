@@ -1,0 +1,257 @@
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: "Open Sans", sans-serif;
+      color: #666;
+    }
+    
+    /* STRUCTURE */
+    .wrapper {
+      padding: 5px;
+      max-width: 960px;
+      width: 95%;
+      margin: 20px auto;
+    }
+    
+    header {
+      padding: 0 15px;
+    }
+    
+    .columns {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin: 5px 0;
+    }
+    
+    .column {
+      flex: 1;
+      margin: 2px;
+      padding: 10px;
+    }
+    .column:first-child {
+      margin-left: 0;
+    }
+    .column:last-child {
+      margin-right: 0;
+    }
+    
+    footer {
+      padding: 0 15px;
+    }
+    
+    @media screen and (max-width: 980px) {
+      .columns .column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+      }
+      .columns .column:nth-last-child(2) {
+        margin-right: 0;
+      }
+      .columns .column:last-child {
+        flex-basis: 100%;
+        margin: 0;
+      }
+    }
+    @media screen and (max-width: 680px) {
+      .columns .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+      }
+    }
+    
+    .boxfloatcont {
+      position: absolute;
+    z-index: 1;
+    color: white;
+    text-align: left; line-height: 1;
+    margin-top: 120px;
+    height: 100%;
+    width: 580px;
+    }
+    
+    .boxfloat {
+      flex: 1;
+      display:inline-block;
+    }
+    
+    .boxfloattext1 {
+      font-weight: bold;
+      font-size:3rem;
+    }
+    .boxfloattext2 {
+      font-size:2.5rem;
+    }
+    .boxfloat:first-child {
+      margin-left: 0;
+    }
+    .boxfloat:last-child {
+      margin-right: 0;
+    }
+    
+    @media screen and (max-width: 980px) {
+      .boxfloatcont {
+        margin-top: 120px;
+        height: 100%;
+        width: 350px;
+      }
+      .boxfloatcont .boxfloat {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+      }
+      .boxfloatcont .boxfloat:nth-last-child(2) {
+        margin-right: 0;
+      }
+      .boxfloatcont .boxfloat:last-child {
+        flex-basis: 100%;
+        margin: 0;
+      }
+      .boxfloatcont .boxfloat .boxfloattext1 {
+        font-size:2rem;
+      }
+      .boxfloatcont .boxfloat .boxfloattext2 {
+        font-size:1.5rem;
+      }
+      .boxfloatcont .boxfloat .imgsize{
+      width: 100px;
+      height: 60px;
+    }
+    }
+    @media screen and (max-width: 680px) {
+      .boxfloatcont .boxfloat {
+        flex-basis: 100%;
+        margin: 0 0 0 0;
+      }
+    }
+    
+    .boxfloatcontback {
+      position: absolute;
+    z-index: 1;
+    background: #FC4F17;;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    }
+    
+    .boxfloatback {
+      flex: 1;
+      margin: 0;
+      padding: 0;
+      display:inline-block;
+    }
+    
+    .boxfloatbacktext1 {
+      font-weight: bold;
+      font-size:6rem;
+    }
+    .boxfloatbacktext2 {
+      font-size:5.5rem;
+    }
+    .boxfloatback:first-child {
+      margin-left: 0;
+    }
+    .boxfloatback:last-child {
+      margin-right: 0;
+    }
+    
+    input[type=text], select {
+      width: 100%;
+      padding: 5px 8px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      color: #666;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: #FC4F17;
+      color: white;
+      padding: 10px 18px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #FC4F17;
+    }
+    
+    .cssform {
+      padding: 20px;
+    }
+    .imgsize{
+      width: 150px;
+      height: 100px;
+    }
+    ::placeholder {
+      color:darkgrey;
+      opacity: 1; /* Firefox */
+      font-size: 14px;
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color: darkgrey;
+    }
+    
+    ::-ms-input-placeholder { /* Microsoft Edge */
+     color: darkgrey;
+    }
+    
+    </style>
+    
+    <header class="rk-portfolio-cover  item-inside-1Aux"> 
+      <section class="boxfloatcontback"> 
+        <div class="boxfloatback"> 
+    
+        </div>
+    
+      </section>
+    
+      <section class="boxfloatcont"> 
+        <div class="boxfloat"> 
+            <div style="float: left; margin-left: 30px;">
+                <img class="imgsize" id="u107" alt="" src="assets/img/infonavitb.png">
+            </div>
+            <div style="float: left; margin-left: 30px;">
+                <div style="display:inline-block; text-align: center">
+                    <div class="boxfloattext2" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Cotiza tus puntos</div>
+                    <div class="boxfloattext1" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: bolder;">INFONAVIT</div>
+                  </div>
+            </div>
+ 
+            <div class="cssform" style="float: left;">
+                <form id="frmCita" method="post" enctype="multipart/form-data" action="" data-sizePolicy="fixed" data-pintopage="page_fixedCenter">
+                  <label for="fname">Nombre:</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Introducir nombre..">
+              
+                  <label for="lname">Fecha de nacimiento:</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Introducir fecha de nacimiento..">
+              
+                  <label for="fname">Numero de seguro social:</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Introducir nº de seguro social..">
+              
+                  <label for="lname">Numero de teléfono:</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Introducir nº de telf...">
+              
+                  <input type="submit" value="Enviar">
+                </form>
+              </div>  
+    
+        </div>
+    
+        
+    
+    </section>
+    
+    </header>
+    
+    

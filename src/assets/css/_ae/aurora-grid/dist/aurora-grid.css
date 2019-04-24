@@ -16,6 +16,7 @@
 .ae-container:after,
 .ae-container-fluid:after {
   clear: both;
+  vertical-align: middle;
 }
 
 html {

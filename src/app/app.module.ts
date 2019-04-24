@@ -8,6 +8,11 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { PrincipalComponent } from './pages/principal/principal.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
+import { PuntosComponent } from './pages/puntos/puntos.component';
+import { AgendarcitaComponent } from './pages/agendarcita/agendarcita.component';
+import { CreditoComponent } from './pages/credito/credito.component';
+import { DesarrolloComponent } from './pages/desarrollo/desarrollo.component';
+import { ModeloComponent } from './pages/modelo/modelo.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { ItemComponent } from './pages/item/item.component';
     FooterComponent,
     PrincipalComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    PuntosComponent,
+    AgendarcitaComponent,
+    CreditoComponent,
+    DesarrolloComponent,
+    ModeloComponent
   ],
   imports: [
     BrowserModule,

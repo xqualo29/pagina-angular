@@ -77,13 +77,14 @@ body {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 3.3rem;
-  padding-top: 2.8rem;
+          
+
 }
 @media (min-width: 64em) {
   .rk-topbar {
     padding-bottom: 0;
   }
+
 }
 
 .rk-logo {
@@ -97,6 +98,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   width: 20%;
+ 
 }
 .rk-logo sup {
   font-size: .5625rem;
@@ -238,6 +240,12 @@ body {
   font-size: .75rem;
   margin-bottom: .875rem;
 }
+.rk-footer__textAux {
+  color: #FFFFFF;
+  font-size: .6rem;
+  margin-bottom: .1em;
+  
+}
 .rk-footer__text span {
   font-size: .875rem;
 }
@@ -274,6 +282,45 @@ body {
   margin-right: 0;
 }
 .rk-social-btn svg {
+  height: 100%;
+  width: 100%;
+}
+
+.rk-social-btnAuxR {
+  background: none;
+  border: 0;
+  display: inline-block;
+  height: 20px;
+  margin-left: .5rem;
+  margin-right: .1rem;
+  width: 20px;
+}
+.rk-social-btnAuxR:first-child {
+  margin-left: 0;
+}
+.rk-social-btnAuxR:last-child {
+  margin-right: 0;
+}
+.rk-social-btnAuxR svg {
+  height: 100%;
+  width: 100%;
+}
+.rk-social-btnAux {
+  background: none;
+  border: 0;
+  display: inline-block;
+  height: 20px;
+  margin-left: .1rem;
+  margin-right: .1rem;
+  width: 20px;
+}
+.rk-social-btnAux:first-child {
+  margin-left: 0;
+}
+.rk-social-btnAux:last-child {
+  margin-right: 0;
+}
+.rk-social-btnAux svg {
   height: 100%;
   width: 100%;
 }
@@ -1364,6 +1411,37 @@ body {
     background-size: 150%;
   }
 }
+.item-inside-1Aux {
+  background-image: url("../img/blur.jpg");
+  background-position: 50% 100%;
+  background-size: 350%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+  .item-inside-1Aux {
+    background-image: url("../img/blur.jpg");
+  }
+}
+@media (min-width: 40em) {
+  .item-inside-1Aux {
+    background-size: 150%;
+  }
+}
+.item-inside-1Aux1 {
+  background-image: url("../img/10.jpg");
+  background-position: 50% 100%;
+  background-size: 350%;
+  
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+  .item-inside-1Aux1 {
+    background-image: url("../img/10.jpg");
+  }
+}
+@media (min-width: 40em) {
+  .item-inside-1Aux1 {
+    background-size: 150%;
+  }
+}
 
 .post-inside-1 {
   background-image: url("../img/post-1.jpg");
@@ -1967,7 +2045,7 @@ body {
   padding-top: .16rem;
 }
 .rk-menu__item {
-  color: #202020;
+  color: #FFFFFF;
   display: inherit;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1982,7 +2060,7 @@ body {
   color: #a0a0a0;
 }
 .rk-menu__link {
-  padding-bottom: 4.2rem;
+  padding-bottom: 1rem;
 }
 .rk-menu__sub {
   background-color: white;
@@ -2025,6 +2103,8 @@ body {
   visibility: visible;
   z-index: 2;
 }
+
+
 
 @media (max-width: 64em) {
   #mobile-menu:checked ~ .rk-topbar .rk-navigation {
@@ -2166,7 +2246,10 @@ body {
 .rk-dark-color {
   color: #202020;
 }
-
+.rk-dark-colorAux {
+  color: #FFFFFF;
+  opacity: 0.5;
+}
 .rk-light-color {
   color: #787878;
 }
