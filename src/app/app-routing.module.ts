@@ -10,6 +10,7 @@ import { DesarrolloComponent } from './pages/desarrollo/desarrollo.component';
 import { ModeloComponent } from './pages/modelo/modelo.component';
 
 const routes: Routes = [
+  {path: '', component: PrincipalComponent},
   {path: 'home', component: PrincipalComponent},
   {path: 'about', component: AboutComponent},
   {path: 'item', component: ItemComponent},
