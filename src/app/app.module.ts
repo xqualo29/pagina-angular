@@ -13,6 +13,7 @@ import { AgendarcitaComponent } from './pages/agendarcita/agendarcita.component'
 import { CreditoComponent } from './pages/credito/credito.component';
 import { DesarrolloComponent } from './pages/desarrollo/desarrollo.component';
 import { ModeloComponent } from './pages/modelo/modelo.component';
+import { CedroComponent } from './pages/cedro/cedro.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ModeloComponent } from './pages/modelo/modelo.component';
     AgendarcitaComponent,
     CreditoComponent,
     DesarrolloComponent,
-    ModeloComponent
+    ModeloComponent,
+    CedroComponent
   ],
   imports: [
     BrowserModule,

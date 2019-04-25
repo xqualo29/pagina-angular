@@ -1,3 +1,224 @@
-<p>
-  modelo works!
-</p>
+
+<style>
+
+    header {
+      height: auto;
+      margin-top: 115px;
+    }
+  
+    .wrapper {
+
+
+      width: 100%;
+
+    }
+  
+    .columns {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 5px 0;
+      }
+      
+      .column {
+        flex: 1;
+        margin: 5px;
+        padding: 10px;
+      }
+      .column:first-child {
+        margin-left: 0;
+      }
+      .column:last-child {
+        margin-right: 0;
+      }
+      .boxfloattext1 {
+        font-weight: bold;
+        font-size:3rem;
+      }
+      .boxfloattext2 {
+        font-size:1rem;
+      }
+      @media screen and (max-width: 980px) {
+        .columns .column {
+          margin-bottom: 5px;
+          flex-basis: 40%;
+        }
+        .columns .column:nth-last-child(2) {
+          margin-right: 0;
+        }
+        .columns .column:last-child {
+          flex-basis: 60%;
+          margin: 0;
+        }
+        .columns .column .boxfloattext1 {
+          font-size:1.8rem;
+        }
+        .columns .column .boxfloattext2 {
+          font-size:.8rem;
+        }
+      }
+      @media screen and (max-width: 680px) {
+        .columns .column {
+          flex-basis: 40%;
+          margin: 0 0 5px 0;
+        }
+        .columns .column .boxfloattext1 {
+          font-size:1.2rem;
+        }
+        .columns .column .boxfloattext2 {
+          font-size:.6rem;
+        }
+      }
+
+      .column1 {
+        flex: 1;
+        margin: 5px;
+        color: white; 
+        font-weight: bold; 
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      .backimg{
+        height: 290px;
+      }
+
+      .column1 .backimg:hover{
+        background: rgba(219, 108, 61, 0.6);
+      }
+
+      .column1:first-child {
+        margin-left: 0;
+      }
+      .column1:last-child {
+        margin-right: 0;
+      }
+
+      @media screen and (max-width: 980px) {
+        .columns .column1 {
+          margin-bottom: 5px;
+          flex-basis: 15%;
+          height: 200px;
+          font-size: 1.5rem;
+        }
+        .columns .column1:nth-last-child(2) {
+          margin-right: 0;
+        }
+        .columns .column1:last-child {
+          flex-basis: 20%;
+          margin: 0;
+        }
+
+        .columns .column1 .backimg{
+        height: 200px;
+        }
+
+
+      }
+      @media screen and (max-width: 680px) {
+        .columns .column1 {
+          flex-basis: 20%;
+          margin: 0 0 5px 0;
+          height: 150px;
+          font-size: 1rem;
+        }
+        .columns .column1 .backimg{
+        height: 150px;
+        }
+
+      }
+
+    </style>
+  
+    <header class="item-inside-1Aux2"> 
+        <div class="wrapper">
+  
+            <section class="columns"> 
+  
+              <div class="column" style="color: white;"> 
+             <div class="boxfloattext1">SE VIVE BIEN</div>
+             <div class="boxfloattext1">Y SI TE ALCANZA</div>
+             <a routerLink="/agendarcita" class="rk-menu__link"><div style="border-radius: 15px;
+              background:firebrick;
+              width: 200px;
+              height: 40px; 
+              border:4px solid firebrick;
+              text-align:center;
+              padding: 5px;
+              margin-top: 1rem;
+              margin-left: 2rem;
+              ">
+              Agendar cita
+              </div></a>
+              
+              </div>
+  
+              <div class="column"> 
+              </div>
+  
+            </section>
+            <section class="columns"> 
+  
+                <div class="column"> 
+               
+               
+                </div>
+                
+    
+                <div class="column" style="color: white;"> 
+                    <div class="boxfloattext1">Modelo de casas</div>
+                </div>
+  
+              </section>
+
+        <div style="background-color: #FC4F17; width: 100%; height: 80px">
+
+
+        </div>
+
+
+        </div>
+
+    </header>
+
+    <section class="columns"> 
+  
+        <div class="column1"> 
+       
+        </div>
+        
+    
+        <div class="column1" style="background-image: url('assets/img/cedro-layer%200%20copy.png?crc=487970491');"> 
+          
+          <a routerLink="/agendarcita" class="rk-menu__link"><div class="backimg">
+            <div style="padding-top: 50%">
+              CEDRO
+            </div>
+          </div></a>
+          
+        </div>
+    
+        <div class="column1" style="background-image: url('assets/img/ceiba.png?crc=3796803990');"> 
+          <a routerLink="/agendarcita" class="rk-menu__link"><div class="backimg">
+            <div style="padding-top: 50%">
+              CEIBA
+            </div>
+          </div></a>
+        </div>
+          
+      
+          <div class="column1" style="background-image: url('assets/img/nogal.png?crc=481237397');"> 
+            <a routerLink="/agendarcita" class="rk-menu__link"><div class="backimg">
+              <div style="padding-top: 50%">
+                NOGAL
+              </div>
+            </div></a>
+          </div>
+            
+        
+            <div class="column1"> 
+                
+            </div>
+    
+      </section>
+  

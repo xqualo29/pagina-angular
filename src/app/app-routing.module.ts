@@ -7,6 +7,7 @@ import { AgendarcitaComponent } from './pages/agendarcita/agendarcita.component'
 import { PuntosComponent } from './pages/puntos/puntos.component';
 import { CreditoComponent } from './pages/credito/credito.component';
 import { DesarrolloComponent } from './pages/desarrollo/desarrollo.component';
+import { ModeloComponent } from './pages/modelo/modelo.component';
 
 const routes: Routes = [
   {path: 'home', component: PrincipalComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'puntos', component: PuntosComponent},
   {path: 'credito', component: CreditoComponent},
   {path: 'desarrollo', component: DesarrolloComponent},
+  {path: 'modelo', component: ModeloComponent},
   {path: '**', pathMatch: 'full', redirectTo: ''}
 ];
 
