@@ -1,1007 +1,610 @@
 <style>
-/*=====================================================
+	/*=====================================================
    Base
 =====================================================*/
-#content-slider {
-    line-height: 1;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 10px;  /* font-size 1em = 10px = 62.5%*/
-    /* background: #4e616d;*/
+	#content-slider {
+		line-height: 1;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-size: 10px;
+		/* font-size 1em = 10px = 62.5%*/
+		/* background: #4e616d;*/
 
-}
+	}
 
 
-/*=====================================================
+	/*=====================================================
    Clearfix
 =====================================================*/
-.clr {
-    *zoom: 1;
-}
-.clr:before,
-.clr:after {
-    display: table;
-    content: "";
-    line-height: 0;
-}
-.clr:after {
-    clear: both;
-}
+	.clr {
+		*zoom: 1;
+	}
+
+	.clr:before,
+	.clr:after {
+		display: table;
+		content: "";
+		line-height: 0;
+	}
+
+	.clr:after {
+		clear: both;
+	}
 
 
-/*=====================================================
+	/*=====================================================
    Wrapper
 =====================================================*/
-#content-slider .wrap-slider {
-	-webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+	#content-slider .wrap-slider {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 
-	max-width: 1200px;
-	/*max-height: 400px;*/
-	height: 100%;
-	width: 100%;
-	margin: 0px auto;
-	position: relative;
-	text-align: right;
-}
+		max-width: 100%;
+		/*max-height: 400px;*/
+		height: 100%;
+		width: 100%;
+		margin: 0px auto;
+		position: relative;
+		text-align: right;
+		margin-top: 115px;
+	}
 
-#content-slider .wrap-slider.full {
-    width: 100%;
-    max-width: 100%;
-    text-align: center; 
-    border: none;
-}
-
-
-/*=====================================================
-   Links
-=====================================================*/
-#content-slider *:focus {
-    outline: 0;
-}
-
-#content-slider a:hover {
-	color: #7FD4FD !important;
-	text-decoration: underline !important;
-}
-
-#content-slider a:focus {
-    outline: thin dotted #333;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
-}
-
-#content-slider a:hover,
-#content-slider a:active {
-    outline: 0;
-}
+	#content-slider .wrap-slider.full {
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+		border: none;
+	}
 
 
-/*=====================================================
+
+	/*=====================================================
    Responsive Images
    (Ensure images don't scale beyond their parents)
 =====================================================*/
-#content-slider img {
-    max-width: 100%;
-    width: auto\9;
-    height: auto;
-    vertical-align: middle;
-    border: 0;
-    -ms-interpolation-mode: bicubic;
-}
+	#content-slider img {
+		max-width: 100%;
+		width: auto\9;
+		height: auto;
+		vertical-align: middle;
+		border: 0;
+		-ms-interpolation-mode: bicubic;
+	}
 
 
-/*=====================================================
+	/*=====================================================
    Main
 =====================================================*/
-#content-slider .slider {
-	margin-top: 5%;
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	margin: 0 auto;						
-}
+	#content-slider .slider {
+		margin-top: 5%;
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		margin: 0 auto;
+	}
 
-#content-slider .inset {
-	width: 500%;			
-	line-height: 0;
+	#content-slider .inset {
+		width: 500%;
+		line-height: 0;
 
-	-webkit-animation: 30s slidy infinite;
-       -moz-animation: 30s slidy infinite;
-        -ms-animation: 30s slidy infinite;
-         -o-animation: 30s slidy infinite;
-            animation: 30s slidy infinite;
+		-webkit-animation: 30s slidy infinite;
+		-moz-animation: 30s slidy infinite;
+		-ms-animation: 30s slidy infinite;
+		-o-animation: 30s slidy infinite;
+		animation: 30s slidy infinite;
 
-    -webkit-transition: all 2s ease-in-out;
-       -moz-transition: all 2s ease-in-out;
-        -ms-transition: all 2s ease-in-out;
-         -o-transition: all 2s ease-in-out;
-            transition: all 2s ease-in-out; 
-}
+		-webkit-transition: all 2s ease-in-out;
+		-moz-transition: all 2s ease-in-out;
+		-ms-transition: all 2s ease-in-out;
+		-o-transition: all 2s ease-in-out;
+		transition: all 2s ease-in-out;
+	}
 
-#content-slider h1.main-title {
-	text-align: center;
-	color: #00ABFA;
-	font-weight: 200;
-	font-size: 32px;
-	text-transform: uppercase;
-	line-height: 62px;
-	letter-spacing: 0.1em;
-	margin: 5px 0 0px 0;
-}
+	#content-slider h1.main-title {
+		text-align: center;
+		color: #00ABFA;
+		font-weight: 200;
+		font-size: 32px;
+		text-transform: uppercase;
+		line-height: 62px;
+		letter-spacing: 0.1em;
+		margin: 5px 0 0px 0;
+	}
 
-#content-slider .slider [class*='title-'] {
-	background: rgba(0, 0, 0, 0.51);
-	padding: 1% 1%;
-	display: inline-block;
-	width: 40%;
-	/*width: 385px;*/
-	height: auto;
-	position: absolute;
-	z-index: 12;
-	margin: 15px 0 0 15px;
-	/*margin-bottom: -15%;
-	left: -65%;*//*
+	#content-slider .slider [class*='title-'] {
+		background: rgba(0, 0, 0, 0.51);
+		padding: 1% 1%;
+		display: inline-block;
+		width: 40%;
+		/*width: 385px;*/
+		height: auto;
+		position: absolute;
+		z-index: 1;
+		margin: 15px 0 0 15px;
+		/*margin-bottom: -15%;
+	left: -65%;*/
+		/*
 	margin-left: -40%;*/
-	line-height: normal;
-	overflow: hidden;
-	text-align: left;
+		line-height: normal;
+		overflow: hidden;
+		text-align: left;
 
-	-webkit-transition: all 0.5s ease-in-out;
-	   -moz-transition: all 0.5s ease-in-out;
-	    -ms-transition: all 0.5s ease-in-out;
-	     -o-transition: all 0.5s ease-in-out;
-	        transition: all 0.5s ease-in-out; 
-}
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
 
-#content-slider .th>[class*='title-'] {
-	width: auto;
-	height: auto;
-	position: absolute;
-	top: 0em;
-	right: 0em;
-	text-align: right;
-	margin: 5px 10px 0 0;
-	opacity: 1;
-	line-height: normal;
-	overflow: hidden;
-	
-	-webkit-transition: all 0.5s ease-in-out;
-	   -moz-transition: all 0.5s ease-in-out;
-	    -ms-transition: all 0.5s ease-in-out;
-	     -o-transition: all 0.5s ease-in-out;
-	        transition: all 0.5s ease-in-out;
-}
+	#content-slider .th>[class*='title-'] {
+		width: auto;
+		height: auto;
+		position: absolute;
+		top: 0em;
+		right: 0em;
+		text-align: right;
+		margin: 5px 10px 0 0;
+		opacity: 1;
+		line-height: normal;
+		overflow: hidden;
+
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
 
 
-/*=====================================================
+	/*=====================================================
    Article
 =====================================================*/
-#content-slider .slider h1,#content-slider .th h1 {
-	color: #fffefe;
-	text-transform: uppercase;
-	padding: 0;
-	margin: 0;
-	font-weight: bold;
-}
+	#content-slider .slider h1,
+	#content-slider .th h1 {
+		color: #fffefe;
+		text-transform: uppercase;
+		padding: 0;
+		margin: 0;
+		font-weight: bold;
+	}
 
-#content-slider .slider p,#content-slider .th p {
-	color: #fffefe;
-	text-transform: uppercase;
-	padding: 0;
-	margin: 0;
-}
+	#content-slider .slider p,
+	#content-slider .th p {
+		color: #fffefe;
+		text-transform: uppercase;
+		padding: 0;
+		margin: 0;
+	}
 
-#content-slider .slider a,#content-slider .th a {
-	font-weight: bold;
-	color: #00ABFA;
-	text-decoration: none;
-	text-transform: uppercase;
-}
+	#content-slider .slider a,
+	#content-slider .th a {
+		font-weight: bold;
+		color: #00ABFA;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
 
 
-/*=====================================================
+	/*=====================================================
    Article Image Slider
 =====================================================*/
-#content-slider .slider h1 { font-size: 3.0em; line-height: 2em; }
-#content-slider .slider p {	font-size: 2.3em; line-height: 1.2em; }
-#content-slider .slider a { font-size: 1.7em; line-height: 1.5em; }
+	#content-slider .slider h1 {
+		font-size: 3.0em;
+		line-height: 2em;
+	}
+
+	#content-slider .slider p {
+		font-size: 2.3em;
+		line-height: 1.2em;
+	}
+
+	#content-slider .slider a {
+		font-size: 1.7em;
+		line-height: 1.5em;
+	}
 
 
-/*=====================================================
+	/*=====================================================
    Article Image Preview
 =====================================================*/
-#content-slider .th h1 { font-size: 2em; line-height: 1.2em; }
-#content-slider .th p { font-size: 1.2em; line-height: 1.7em; }
-#content-slider .th a { font-size: 1.55em; line-height: 1.55em; }
-#content-slider .th img {
-	position: relative;
-	max-width: 100%;
-	height: auto !important;
-	
-	-webkit-filter: brightness(50%);
-	   -moz-filter: brightness(50%);
-	    -ms-filter: brightness(50%);
-	     -o-filter: brightness(50%);
-	        filter: brightness(50%);
-	
-    -webkit-transition: all 0.5s ease-in-out;
-	   -moz-transition: all 0.5s ease-in-out;
-	    -ms-transition: all 0.5s ease-in-out;
-	     -o-transition: all 0.5s ease-in-out;
-	        transition: all 0.5s ease-in-out; 
-}
+	#content-slider .th h1 {
+		font-size: 2em;
+		line-height: 1.2em;
+	}
 
-#content-slider .th:hover img {
-    -webkit-filter: brightness(100%);
-	   -moz-filter: brightness(100%);
-	    -ms-filter: brightness(100%);
-	     -o-filter: brightness(100%);
-	        filter: brightness(100%);
-}
+	#content-slider .th p {
+		font-size: 1.2em;
+		line-height: 1.7em;
+	}
+
+	#content-slider .th a {
+		font-size: 1.55em;
+		line-height: 1.55em;
+	}
+
+	#content-slider .th img {
+		position: relative;
+		max-width: 100%;
+		height: auto !important;
+
+		-webkit-filter: brightness(50%);
+		-moz-filter: brightness(50%);
+		-ms-filter: brightness(50%);
+		-o-filter: brightness(50%);
+		filter: brightness(50%);
+
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+
+	#content-slider .th:hover img {
+		-webkit-filter: brightness(100%);
+		-moz-filter: brightness(100%);
+		-ms-filter: brightness(100%);
+		-o-filter: brightness(100%);
+		filter: brightness(100%);
+	}
 
 
-/*=====================================================
+	/*=====================================================
    Main Image
 =====================================================*/
-#content-slider figure {
-	margin: 0;
-	padding: 0;
-	width: 20%;
-	float: left;
-	cursor: pointer;
+	#content-slider figure {
+		margin: 0;
+		padding: 0;
+		width: 20%;
+		float: left;
+		cursor: pointer;
 
-    -webkit-transition: all 2s ease-in-out;
-       -moz-transition: all 2s ease-in-out;
-        -ms-transition: all 2s ease-in-out;
-         -o-transition: all 2s ease-in-out;
-            transition: all 2s ease-in-out; 
-}
+		-webkit-transition: all 2s ease-in-out;
+		-moz-transition: all 2s ease-in-out;
+		-ms-transition: all 2s ease-in-out;
+		-o-transition: all 2s ease-in-out;
+		transition: all 2s ease-in-out;
+	}
 
-#content-slider figure img {
-  width: 100%;
-  height: 605px;
-	position: relative;
-}		
-
-
-/*=====================================================
-   Image Preview
-=====================================================*/
-#content-slider span.th {
-	width: 25%;
-	margin: 10% 0% 0 0%;
-	text-align: center;
-	display: inline-block;
-	position: relative;
-	z-index: 1000;
-	cursor: pointer;
-}
-
-#content-slider input[type='radio'] {			
-	width: 10px;
-	height: 10px;
-	display: none;
-	position: relative;
-	/*left: 0%;
-	bottom: 0%;*/
-
-	display: none;
-}
-
-#control{					
-	position: absolute;
-	left: 3%;
-	z-index: 5;			
-	top: 55%;
-	width: 95%;
-}
-
-#content-slider label.first{
-	width: 9px;
-	height: 9px;
-	margin: 33% 1% 0 0%;
-	/*float: left;*/
-	text-align: center;
-	display: inline-block;
-	position: relative;
-	z-index: 1000;
-	cursor: pointer;
-	border-radius: 100%;
-	background: #00ABFA;
-  border: 1px solid transparent;
-
-	-webkit-transition: all 0.3s ease-in-out;
-	   -moz-transition: all 0.3s ease-in-out;
-	    -ms-transition: all 0.3s ease-in-out;
-	     -o-transition: all 0.3s ease-in-out;
-	        transition: all 0.3s ease-in-out; 
-}
-
-#content-slider #main>label:after{
-	content: '';
-	display: inline-block;
-	width: 8px;
-	height: 8px;
-	background: #fff;
-	position: absolute;
-	top: 1px;
-	left: 1px;
-	border-radius: 100%;
-	opacity: 0;
-	visibility: hidden;
-	z-index: 9;
-
-    -webkit-transition: all 1s ease-in-out;
-       -moz-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
-         -o-transition: all 1s ease-in-out;
-            transition: all 1s ease-in-out; 
-}
-
-#content-slider input[type='radio'] {			
-	width: 10px;
-	height: 10px;
-	display: none;
-	position: relative;
-    /*left: 0%;
-	bottom: 0%;*/
-	display: none;
-}
-
-#content-slider #control{					
-	position: absolute;
-	left: 3%;
-	z-index: 15;			
-	top: 0%;
-	width: 95%;
-	margin-top: 10%;
-	display: none;
-}
-
-#content-slider label.first{
-	width: 9px;
-	height: 9px;
-	/*margin: 33% 1% 0 0%;*/
-	margin: 0% 1% -30% 0%;
-	/*float: left;*/
-	text-align: center;
-	/*display: inline-block;*/
-	position: relative;
-	z-index: 1000;
-	cursor: pointer;
-	border-radius: 100%;
-	background: #00ABFA;
-    border: 1px solid transparent;
-    
-	-webkit-transition: all 0.3s ease-in-out;
-	   -moz-transition: all 0.3s ease-in-out;
-	    -ms-transition: all 0.3s ease-in-out;
-	     -o-transition: all 0.3s ease-in-out;
-	        transition: all 0.3s ease-in-out;
-	        
-	display: none; 
-}
-
-#content-slider #main>label:after{
-	content: '';
-	display: inline-block;
-	width: 7px;
-	height: 7px;
-	background: #fff;
-	position: absolute;
-	top: 1px;
-	left: 1px;
-	border-radius: 100%;
-	opacity: 0;
-	visibility: hidden;
-	z-index: 9;
-
-    -webkit-transition: all 1s ease-in-out;
-       -moz-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
-         -o-transition: all 1s ease-in-out;
-            transition: all 1s ease-in-out; 
-}
+	#content-slider figure img {
+		width: 100%;
+		height: 605px;
+		position: relative;
+	}
 
 
-/*=====================================================
-   Controls
-=====================================================*/
-#main>label:hover { width: 9px; height: 9px; background: #FFF; border: 1px solid #00ABFA; }	
-
-input#a-1:checked ~ .slider .inset { margin-left: 0%;   }
-input#a-2:checked ~ .slider .inset { margin-left:-100%; }
-input#a-3:checked ~ .slider .inset { margin-left:-200%; }
-input#a-4:checked ~ .slider .inset { margin-left:-300%; }
-input#a-5:checked ~ .slider .inset { margin-left:-400%; }
-
-
-input#a-1:checked ~ #main>label:nth-child(1):after { opacity: 1; visibility: visible; }
-input#a-2:checked ~ #main>label:nth-child(2):after { opacity: 1; visibility: visible; }
-input#a-3:checked ~ #main>label:nth-child(3):after { opacity: 1; visibility: visible; }
-input#a-4:checked ~ #main>label:nth-child(4):after { opacity: 1; visibility: visible; }
-
-input#a-1:checked ~ #control>label:nth-child(2),
-input#a-2:checked ~ #control>label:nth-child(3),
-input#a-3:checked ~ #control>label:nth-child(4),
-input#a-4:checked ~ #control>label:nth-child(1),
-input#a-5:checked ~ #control>label:nth-child(1),
-input#a-1:checked ~ #control>label:nth-child(4),
-input#a-2:checked ~ #control>label:nth-child(1),
-input#a-3:checked ~ #control>label:nth-child(2),
-input#a-4:checked ~ #control>label:nth-child(3) {
-	width: 50px;
-	height: 50px;
-	top: 12em;
-	display: inline-block;
-	position: relative;			
-	cursor: pointer;
-}
-
-input#a-1:checked ~ #control>label:nth-child(2),  
-input#a-2:checked ~ #control>label:nth-child(3), 
-input#a-3:checked ~ #control>label:nth-child(4), 
-input#a-4:checked ~ #control>label:nth-child(1) {								
-	float: right;
-	right: 0.3%;						
-}
-
-input#a-1:checked ~ #control>label:nth-child(4),
-input#a-2:checked ~ #control>label:nth-child(1),
-input#a-3:checked ~ #control>label:nth-child(2),
-input#a-4:checked ~ #control>label:nth-child(3) {			
-	float: left;
-	left: 0.3%;			
-}
-
-span#a-1:focus ~ .slider .inset { margin-left: 0%;   }
-span#a-2:focus ~ .slider .inset { margin-left:-100%; }
-span#a-3:focus ~ .slider .inset { margin-left:-200%; }
-span#a-4:focus ~ .slider .inset { margin-left:-300%; }
-span#a-5:focus ~ .slider .inset { margin-left:-400%; }
-
-span#b-1:focus ~ .slider .inset { margin-left: 0%;   }
-span#b-2:focus ~ .slider .inset { margin-left:-100%; }
-span#b-3:focus ~ .slider .inset { margin-left:-200%; }
-span#b-4:focus ~ .slider .inset { margin-left:-300%; }
-span#b-5:focus ~ .slider .inset { margin-left:-400%; }
-
-#content-slider input:checked ~ .slider>.inset {
-	-webkit-animation: none;
-       -moz-animation: none;
-        -ms-animation: none;
-         -o-animation: none;
-            animation: none;		   
-}
-#content-slider input:hover ~ .slider>.inset, #content-slider label:hover ~ .slider>.inset {
-    -webkit-animation-play-state: paused;
-       -moz-animation-play-state: paused;
-        -ms-animation-play-state: paused;
-         -o-animation-play-state: paused;
-            animation-play-state: paused;
-}
-#content-slider input:hover ~ .slider>.inset, #content-slider label:hover ~ .slider>.inset {
-    -webkit-animation-play-state: paused;
-       -moz-animation-play-state: paused;
-        -ms-animation-play-state: paused;
-         -o-animation-play-state: paused;
-            animation-play-state: paused;
-}
-#content-slider span:focus ~ .slider>.inset {
-	-webkit-animation: none;
-       -moz-animation: none;
-        -ms-animation: none;
-         -o-animation: none;
-            animation: none;		   
-}
-#content-slider span:hover ~ .slider>.inset {
-    -webkit-animation-play-state: paused;
-       -moz-animation-play-state: paused;
-        -ms-animation-play-state: paused;
-         -o-animation-play-state: paused;
-            animation-play-state: paused;
-}
-
-
-/*=====================================================
+	/*=====================================================
    Animation Image
 =====================================================*/
 
-@keyframes slidy {
-	 20% { margin-left:    0%; }
-	 25% { margin-left: -100%; }
-	 45% { margin-left: -100%; }
-	 50% { margin-left: -200%; }
-	 70% { margin-left: -200%; }
-	 75% { margin-left: -300%; }
-	100% { margin-left: -300%; }
-}
-@-webkit-keyframes slidy {
-	 20% { margin-left:    0%; }
-	 25% { margin-left: -100%; }
-	 45% { margin-left: -100%; }
-	 50% { margin-left: -200%; }
-	 70% { margin-left: -200%; }
-	 75% { margin-left: -300%; }
-	100% { margin-left: -300%; }
-}
-@-moz-keyframes slidy {
-	 20% { margin-left:    0%; }
-	 25% { margin-left: -100%; }
-	 45% { margin-left: -100%; }
-	 50% { margin-left: -200%; }
-	 70% { margin-left: -200%; }
-	 75% { margin-left: -300%; }
-	100% { margin-left: -300%; }
-}
-@-o-keyframes slidy {
-	 20% { margin-left:    0%; }
-	 25% { margin-left: -100%; }
-	 45% { margin-left: -100%; }
-	 50% { margin-left: -200%; }
-	 70% { margin-left: -200%; }
-	 75% { margin-left: -300%; }
-	100% { margin-left: -300%; }
-}
+	@keyframes slidy {
+		20% {
+			margin-left: 0%;
+		}
 
-@media only screen and (max-width: 1040px) and (min-width: 640px) {
+		25% {
+			margin-left: -100%;
+		}
 
-	#content-slider .th h1 { font-size: 1.2em; line-height: 1em; }
+		45% {
+			margin-left: -100%;
+		}
 
-	#content-slider .th p { font-size: 1.0em; line-height: 0.7em; }
+		50% {
+			margin-left: -200%;
+		}
 
-	#content-slider .th a { font-size: 0.55em; line-height: 0.55em; }
+		70% {
+			margin-left: -200%;
+		}
 
-}
+		75% {
+			margin-left: -300%;
+		}
 
-@media only screen and (max-width: 940px) { 
+		100% {
+			margin-left: -300%;
+		}
+	}
 
-	#content-slider .slider [class*='title-'] { margin-bottom: -20%; }
+	@-webkit-keyframes slidy {
+		20% {
+			margin-left: 0%;
+		}
 
-	#container {
-position: absolute;
-z-index: 1;
-cursor: pointer;
-margin-top: 250px;
-margin-left: 4%;
-background: #fff;
-opacity: 0.4;
-height: 200px;
-width: 400px;
-            }
+		25% {
+			margin-left: -100%;
+		}
 
-}
-		
-@media only screen and (max-width: 640px) {
+		45% {
+			margin-left: -100%;
+		}
 
-  
-}
+		50% {
+			margin-left: -200%;
+		}
 
-@media only screen and (max-width: 480px) {
+		70% {
+			margin-left: -200%;
+		}
 
-	
+		75% {
+			margin-left: -300%;
+		}
 
+		100% {
+			margin-left: -300%;
+		}
+	}
 
-}
+	@-moz-keyframes slidy {
+		20% {
+			margin-left: 0%;
+		}
 
+		25% {
+			margin-left: -100%;
+		}
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-* {
-  box-sizing: border-box;
-}
+		45% {
+			margin-left: -100%;
+		}
 
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #666;
-}
+		50% {
+			margin-left: -200%;
+		}
 
-/* STRUCTURE */
-.wrapper {
-  padding: 5px;
-  max-width: 960px;
-  width: 95%;
-  margin: 20px auto;
-}
+		70% {
+			margin-left: -200%;
+		}
 
-header {
-  padding: 0 15px;
-}
+		75% {
+			margin-left: -300%;
+		}
 
-.columns {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: 5px 0;
-}
+		100% {
+			margin-left: -300%;
+		}
+	}
 
-.column {
-  flex: 1;
-  margin: 2px;
-  padding: 10px;
-}
-.column:first-child {
-  margin-left: 0;
-}
-.column:last-child {
-  margin-right: 0;
-}
+	@-o-keyframes slidy {
+		20% {
+			margin-left: 0%;
+		}
 
-footer {
-  padding: 0 15px;
-}
+		25% {
+			margin-left: -100%;
+		}
 
-@media screen and (max-width: 980px) {
-  .columns .column {
-    margin-bottom: 5px;
-    flex-basis: 40%;
-  }
-  .columns .column:nth-last-child(2) {
-    margin-right: 0;
-  }
-  .columns .column:last-child {
-    flex-basis: 100%;
-    margin: 0;
-  }
-}
-@media screen and (max-width: 680px) {
-  .columns .column {
-    flex-basis: 100%;
-    margin: 0 0 5px 0;
-  }
-}
+		45% {
+			margin-left: -100%;
+		}
 
-.boxfloatcont {
-	position: absolute;
-z-index: 1;
-cursor: pointer;
-margin-top: 250px;
-margin-left: 5%;
-color: white;
-text-align: left; line-height: 1;
-height: 300px;
-width: 580px;
-}
+		50% {
+			margin-left: -200%;
+		}
 
-.boxfloat {
-  flex: 1;
-  margin: 2px;
-  padding: 10px;
-	display:inline-block;
-}
+		70% {
+			margin-left: -200%;
+		}
 
-.boxfloattext1 {
-  font-weight: bold;
-	font-size:6rem;
-}
-.boxfloattext2 {
-  font-size:5.5rem;
-}
-.boxfloat:first-child {
-  margin-left: 0;
-}
-.boxfloat:last-child {
-  margin-right: 0;
-}
+		75% {
+			margin-left: -300%;
+		}
 
-@media screen and (max-width: 980px) {
-	.boxfloatcont {
-    height: 300px;
-		width: 400px;
-  }
-  .boxfloatcont .boxfloat {
-    margin-bottom: 5px;
-    flex-basis: 40%;
-  }
-  .boxfloatcont .boxfloat:nth-last-child(2) {
-    margin-right: 0;
-  }
-  .boxfloatcont .boxfloat:last-child {
-    flex-basis: 100%;
-    margin: 0;
-  }
-	.boxfloatcont .boxfloat .boxfloattext1 {
-    font-size:4rem;
-  }
-	.boxfloatcont .boxfloat .boxfloattext2 {
-    font-size:3.5rem;
-  }
-}
-@media screen and (max-width: 680px) {
-  .boxfloatcont .boxfloat {
-    flex-basis: 100%;
-    margin: 0 0 5px 0;
-  }
-}
+		100% {
+			margin-left: -300%;
+		}
+	}
 
-.boxfloatcontback {
-	position: absolute;
-z-index: 1;
-cursor: pointer;
-margin-top: 250px;
-margin-left: 4%;
-background: #000;
-opacity: 0.4;
-height: 400px;
-width: 600px;
-}
+	.floatcont {
+		position: absolute;
+		height: 500px;
+		width: 950px;
+		color: white;
+		background: rgba(0, 0, 0, 0.3);
+		z-index: 2;
+		margin-top: 150px;
+		font-size: 8rem;
+		font-weight: bold;
+		line-height: 7rem;
+	}
 
-.boxfloatback {
-  flex: 1;
-  margin: 2px;
-  padding: 10px;
-	display:inline-block;
-}
+	/* STRUCTURE */
+	.wrapper {
+		padding: 5px;
+		max-width: 100%;
+		width: 60%;
+		margin: 20px auto;
+	}
 
-.boxfloatbacktext1 {
-  font-weight: bold;
-	font-size:6rem;
-}
-.boxfloatbacktext2 {
-  font-size:5.5rem;
-}
-.boxfloatback:first-child {
-  margin-left: 0;
-}
-.boxfloatback:last-child {
-  margin-right: 0;
-}
+	.columns {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		margin: 5px 0;
 
-@media screen and (max-width: 980px) {
+	}
 
-	.boxfloatcontback {
-    height: 300px;
-		width: 400px;
-  }
+	.column {
+		flex: 1;
+		margin: 2px;
+		padding: 10px;
 
-  .boxfloatcontback .boxfloatback {
-    margin-bottom: 5px;
-    flex-basis: 40%;
-  }
-  .boxfloatcontback .boxfloatback:nth-last-child(2) {
-    margin-right: 0;
-  }
-  .boxfloatcontback .boxfloatback:last-child {
-    flex-basis: 100%;
-    margin: 0;
-  }
+	}
 
-}
-@media screen and (max-width: 680px) {
-  .boxfloatcontback .boxfloatback {
-    flex-basis: 100%;
-    margin: 0 0 5px 0;
-  }
-}
+	.column:first-child {
+		margin-left: 0;
+	}
 
+	.column:last-child {
+		margin-right: 0;
+	}
+
+	.floatcont .text1 {
+	font-size: 1rem;
+	line-height: 1rem;
+	margin-left:40%;
+	}
+
+	@media only screen and (max-width: 1040px) and (min-width: 640px) {
+
+		#content-slider .th h1 {
+			font-size: 1.2em;
+			line-height: 1em;
+		}
+
+		#content-slider .th p {
+			font-size: 1.0em;
+			line-height: 0.7em;
+		}
+
+		#content-slider .th a {
+			font-size: 0.55em;
+			line-height: 0.55em;
+		}
+
+		.floatcont {
+
+			height: 400px;
+			width: 650px;
+			font-size: 5rem;
+			line-height: 5rem;
+
+		}
+
+		.floatcont .text1 {
+
+			font-size: 1rem;
+			line-height: 1rem;
+			margin-left:30%;
+		}
+
+	}
+
+	@media only screen and (max-width: 640px) {
+
+		#content-slider .slider [class*='title-'] {
+			margin-bottom: -20%;
+		}
+
+		.floatcont {
+
+			height: 300px;
+			width: 450px;
+			font-size: 3rem;
+			line-height: 4rem;
+
+		}
+
+		.floatcont .text1 {
+
+		font-size: 1rem;
+		line-height: 1rem;
+		margin-left:20%;
+
+		}
+
+	}
 </style>
-<section class="boxfloatcontback"> 
-		<div class="boxfloatback"> 
 
-		</div>
-
-</section>
-<section class="boxfloatcont"> 
-		<div class="boxfloat"> 
-				<span class="boxfloattext1">SE VIVE BIEN Y SI</span>
-				<span class="boxfloattext2"> TE ALCANZA</span>
-
-				<a routerLink="/agendarcita" class="rk-menu__link"><div style="border-radius: 15px;
-					background:firebrick;
-					width: 200px;
-					height: 40px; 
-					border:4px solid firebrick;
-					text-align:center;
-					padding: 5px;
-					margin-top: 1rem;
-					margin-left: 2rem;
-					">
-					Agendar cita
-					</div></a>
-
-		</div>
-
-</section>
-
-          <div id="content-slider" class="clr">
-              <div class="wrap-slider clr">	
-              
-                <!-- ========== Thumbnail ControlNav ========== -->			
-                <input type="radio" id="a-1" name="a" >			
-                <input type="radio" id="a-2" name="a" >			
-                <input type="radio" id="a-3" name="a" >
-                <input type="radio" id="a-4" name="a" >
-                
-                <nav id="main">
-                      <label for="a-1" class="first"></label>
-                      <label for="a-2" class="first"></label>
-                      <label for="a-3" class="first"></label>
-                      <label for="a-4" class="first"></label>
-                      <!-- <label for="a-5" class="first"></label> -->
-                </nav>
-                    
-                <nav id="control">
-                      <label for="a-1" ></label>
-                      <label for="a-2" ></label>
-                      <label for="a-3" ></label>
-                      <label for="a-4" ></label>
-                      <!-- <label for="a-5" class="first"></label> -->
-                </nav>
-                    <!-- ========================================== -->	
-            
-                  <!-- Thumbnail Images -->
-                <span id="b-1" class="th" tabindex="10">
-
-                </span>
-            
-                <span id="b-2" class="th" tabindex="11">
-                  
-                </span>			
-            
-                <span id="b-3" class="th" tabindex="12">
-                  
-                </span>
-            
-                <span id="b-4" class="th" tabindex="13">
-                  
-                </span>
-                
-                <!-- =============== Images =============== 					
-								<figcaption class="title-1" style="margin-top: 20%">
-									<h1>SE VIVE BIEN Y SI TE ALCANZA</h1>
-									<a routerLink="/agendarcita">Agendar cita</a>
-						</figcaption>-->	
-						
-                <div class="slider">
-										
-                  <div class="inset">
-										
-                    <figure>
-                       
-                      <img src="assets/img/6.jpg" style="opacity: 1;" alt="" id="i-1" class="f">						
-                    </figure>
-            
-                    <figure>
-                      
-                      <img src="assets/img/8.jpg" alt="" id="i-2" class="f">						
-                    </figure>
-            
-                    <figure>
-                     
-                      <img src="assets/img/9.jpg" alt="" id="i-3" class="f">						
-                    </figure>
-            
-                    <figure>
-                      
-                      <img src="assets/img/10.jpg" alt="" id="i-4" class="f">						
-                    </figure>
-                  
-                  </div>
-                </div>					
-            
-              </div>		
-            </div>
-            
-
-						<div class="wrapper">
-
-									
-							<section class="columns">
-								
-								<div class="column">
-
-										<div style="
-										margin-left: auto;
-  									margin-right: auto;
-										width: 280px;
-										height: 150px; ">
-										<div style="width: 280px;
-										height: 150px; color:white;">
-										<div  style="color:#FC4F17; font-family:Arial, Helvetica, sans-serif; font-size: 1.3rem; text-align: center;font-weight: bold">
-                        Tramitamos tus creditos
-										</div>
-										<div style="float: left;">
-										<img class="svg" id="u107" width="80" height="50" alt="" src="assets/img/logofovissste.png">
-									</div>
-									<div style="float: left;">
-										<img class="svg" id="u107" width="100" height="50" alt="" src="assets/img/issfam.png">
-									</div>
-									<div style="float: left; margin-top: 10px;">
-										<span style=" -moz-border-radius:10px 10px 10px 10px;  
-										border-radius:10px 10px 10px 10px; 
-										border:solid 1px #000;
-										background-color:mediumblue;
-										padding:10px;
-										font-size:.8rem;
-										width: 100px;
-										display: block;
-										color: white;
-										font-weight: bold;
-						">
-												CREDITOS BANCARIOS
-										</span>
-
-									</div>
+<div class="floatcont">
+	<div style="margin-top: 10%">
+		<div style="margin-left:15%;">SE VIVE</div>
+		<div style="margin-left:15%;">BIEN Y SI</div>
+		<div style="margin-left:15%;">TE ALCANZA</div>
+		<div class="text1"><a routerLink="/agendarcita" class="rk-menu__link">
+			<div style="border-radius: 15px;background:firebrick;width: 200px;height: 40px; border:4px solid firebrick;text-align:center;padding: 5px;margin-top: 1rem;margin-left: 2rem;">Agendar cita</div></a></div>
+		 
+	</div>
 
 </div>
-</div>
-										
-								</div>
-								
-								<div class="column">
-										<div style="
-										margin-left: auto;
-  									margin-right: auto;
-										width: 290px;
-										height: 150px; ">
-										<div style="width: 290px;
-										height: 150px; color:white;">
-<div style="float: left;">
-		<img class="svg" id="u107" width="100" height="50" alt="" src="assets/img/infonavit.png">
-	</div>
-	<div style="float: left;">
-			
-			<div style="width: 180px;
-			height: 150px; 
-			color:white;
-			margin-left: 10px;
-			line-height: 1.9rem">
-			<span style="font-size: 1rem; color:orangered;">Cotiza tus puntos </span>
-			<span style="font-size: 1.9rem; font-weight: bold; color:orangered;">INFONAVIT</span>
 
-			<a routerLink="/puntos" class="rk-menu__link"><div style="border-radius: 15px;
-				background:firebrick;
-				margin-left: auto;
-				margin-right: auto;
-				width: 100px;
-				height: 40px; 
-				border:4px solid firebrick;
-				text-align: center;
-				margin-top: 10px;
-				">
-				Entrar
-				</div></a>
-			
+<div id="content-slider" class="clr">
+	<div class="wrap-slider clr">
+
+		<div class="slider">
+
+			<div class="inset">
+
+				<figure>
+
+					<img src="assets/img/6.jpg" style="opacity: 1;" alt="" id="i-1" class="f">
+				</figure>
+
+				<figure>
+
+					<img src="assets/img/8.jpg" alt="" id="i-2" class="f">
+				</figure>
+
+				<figure>
+
+					<img src="assets/img/9.jpg" alt="" id="i-3" class="f">
+				</figure>
+
+				<figure>
+
+					<img src="assets/img/10.jpg" alt="" id="i-4" class="f">
+				</figure>
+
+			</div>
 		</div>
-	</div>
-										</div>
-									</div>
-										
-								</div>
-								
-								<div class="column">
-										<div style="border-radius: 25px;
-										background: #FC4F17;
-										margin-left: auto;
-  									margin-right: auto;
-										width: 200px;
-										height: 150px; ">
-										<div style="width: 200px;
-										height: 150px; color:white;
-										padding: 20px;
-										line-height: 1.9rem">
-										<span style="font-size: 1.3rem">Como obtener tu </span>
-										<span style="font-size: 2.5rem; font-weight: bold">credito?</span>
-					
-										<a routerLink="/credito" class="rk-menu__link"><div style="border-radius: 15px;
-											background:firebrick;
-											margin-left: auto;
-											margin-right: auto;
-											width: 100px;
-											height: 40px; 
-											border:4px solid #fff;
-											text-align: center;
-											margin-top: 10px;
-											">
-											Entrar
-											</div></a>
-										</div>
-									</div>
-								</div>
-								
-							</section>	
 
-							
+	</div>
+
+
+</div>
+
+<div class="wrapper">
+	<section class="columns">
+		<div class="column">
+			<div style=" margin-left: auto; margin-right: auto; width: 280px; height: 150px; ">
+				<div style="width: 280px; height: 150px; color:white;">
+					<div style="color:#FC4F17; font-family:Arial, Helvetica, sans-serif; font-size: 1.3rem; text-align: center;font-weight: bold">Tramitamos tus creditos
+					</div>
+					<div style="float: left;">
+						<img class="svg" id="u107" width="80" height="50" alt=""src="assets/img/logofovissste.png">
+					</div>
+					<div style="float: left;">
+						<img class="svg" id="u107" width="100" height="50" alt=""src="assets/img/issfam.png">
+					</div>
+					<div style="float: left; margin-top: 10px;">
+						<span style=" -moz-border-radius:10px 10px 10px 10px; border-radius:10px 10px 10px 10px; border:solid 1px #000; background-color:mediumblue; padding:10px;font-size:.8rem;width: 100px;display: block;color: white;font-weight: bold;">CREDITOS BANCARIOS
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div style=" margin-left: auto; margin-right: auto; width: 290px; height: 150px; ">
+				<div style="width: 290px; height: 150px; color:white;">
+					<div style="float: left;">
+						<img class="svg" id="u107" width="100" height="50" alt="" src="assets/img/infonavit.png">
+					</div>
+					<div style="float: left;">
+						<div style="width: 180px; height: 150px;  color:white; margin-left: 10px; line-height: 1.9rem">
+							<span style="font-size: 1rem; color:orangered;">Cotiza tus puntos </span>
+							<span style="font-size: 1.9rem; font-weight: bold; color:orangered;">INFONAVIT</span>
+							<a routerLink="/puntos" class="rk-menu__link">
+								<div style="border-radius: 15px;background:firebrick;margin-left: auto;margin-right: auto;width: 100px;height: 40px; border:4px solid firebrick;text-align: center;margin-top: 10px;">Entrar
+								</div
+								></a>
 							</div>
-                  
-  
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div style="border-radius: 25px;background: #FC4F17;margin-left: auto;margin-right: auto;width: 200px;height: 150px; ">
+					<div style="width: 200px;height: 150px; color:white;padding: 20px;line-height: 1.9rem">
+						<span style="font-size: 1.3rem">Como obtener tu </span>
+						<span style="font-size: 2.5rem; font-weight: bold">credito?</span>
+						<a routerLink="/credito" class="rk-menu__link">
+							<div style="border-radius: 15px;background:firebrick;margin-left: auto;margin-right: auto;width: 100px;height: 40px; border:4px solid #fff;text-align: center;margin-top: 10px;">Entrar
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div> 

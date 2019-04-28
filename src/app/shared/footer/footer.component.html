@@ -1,13 +1,47 @@
-<footer class="ae-container-fluid" style="background-color: black; width: 100%;">
-    <div class="ae-grid ae-grid--collapse">
+<style>
+  
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+}
 
-      <div class="ae-grid__item item-lg-9 au-xs-ta-center">
-          <div  style="color:white; padding-left: 5rem;padding-right: 5rem;font-family:Arial, Helvetica, sans-serif; font-size: small">
-              Visítanos en Av. Yaxché esquina Av. Chetumal, SM. 256, Mz 08, Lt 6, Cancún Quintana Ro, México. C.P. 77500. o llámanos al Teléfono: 998 881 00 77 o a nuestro 01-800 1080 1080 Cómo llegar: Sobre Av. López Portillo rumbo a Mérida desviarse en la entrada a Tierra Maya y seguir la Av. Lakin hasta llegar a la Av. Yaxché.
-          </div>
-        </div>
-      <div class="ae-grid__item item-lg-2 au-xs-ta-center au-lg-ta-right" style="padding-right: 1rem;">
-          <img class="svg" id="u107" width="230" height="50" alt="" data-mu-svgfallback="assets/img/svg%20pegado%201143682x271_poster_.png?crc=3870437727" src="assets/img/ESR2.png">
-      </div>
+.column {
+  flex: .7;
+  margin: 2px;
+  padding: 10px;
+}
+.column1 {
+  flex: .3;
+  margin: 2px;
+  padding: 10px;
+}
+.column:first-child {
+  margin-left: 0;
+}
+.column:last-child {
+  margin-right: 0;
+}
+.column1:first-child {
+  margin-left: 0;
+}
+.column1:last-child {
+  margin-right: 0;
+}
+</style>
+<footer style="background-color: black; width: 100%;">
+  <section class="columns"> 
+
+    <div class="column" style="color: white; font-family:Arial, Helvetica, sans-serif; font-size: small;"> 
+    Visítanos en Av. Yaxché esquina Av. Chetumal, SM. 256, Mz 08, Lt 6, Cancún Quintana Ro, México. C.P. 77500. o llámanos al Teléfono: 998 881 00 77 o a nuestro 01-800 1080 1080 Cómo llegar: Sobre Av. López Portillo rumbo a Mérida desviarse en la entrada a Tierra Maya y seguir la Av. Lakin hasta llegar a la Av. Yaxché.
     </div>
+
+    <div class="column1" style="color: white;"> 
+    <img class="svg" id="u107" width="230" height="50" alt="" src="assets/img/ESR2.png">
+    </div>
+
+
+  </section>
+
   </footer>
