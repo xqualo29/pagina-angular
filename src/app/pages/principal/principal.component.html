@@ -430,6 +430,7 @@
 		flex: 1;
 		margin: 2px;
 		padding: 10px;
+		height: 250px;
 
 	}
 
@@ -480,6 +481,10 @@
 			margin-left:30%;
 		}
 
+		.columns .column  {
+      height: 240px;
+    }
+
 	}
 
 	@media only screen and (max-width: 640px) {
@@ -490,21 +495,34 @@
 
 		.floatcont {
 
-			height: 300px;
-			width: 450px;
-			font-size: 3rem;
-			line-height: 4rem;
+			height: 250px;
+			width: 300px;
+			font-size: 2rem;
+			line-height: 3rem;
 
 		}
 
 		.floatcont .text1 {
 
-		font-size: 1rem;
-		line-height: 1rem;
+		font-size: .9rem;
+		line-height: .9rem;
 		margin-left:20%;
 
 		}
 
+		.columns .column  {
+      height: 230px;
+    }
+
+		.wrapper{
+			margin-bottom: 50px;
+		}
+
+	}
+	@media screen and (max-width: 320px) {
+		.wrapper{
+			margin-bottom: 100px;
+		}
 	}
 </style>
 
@@ -558,8 +576,8 @@
 <div class="wrapper">
 	<section class="columns">
 		<div class="column">
-			<div style=" margin-left: auto; margin-right: auto; width: 280px; height: 150px; ">
-				<div style="width: 280px; height: 150px; color:white;">
+			<div style=" margin-left: auto; margin-right: auto; width: 280px;">
+				<div style="width: 280px; color:white;">
 					<div style="color:#FC4F17; font-family:Arial, Helvetica, sans-serif; font-size: 1.3rem; text-align: center;font-weight: bold">Tramitamos tus creditos
 					</div>
 					<div style="float: left;">
@@ -576,13 +594,13 @@
 			</div>
 		</div>
 		<div class="column">
-			<div style=" margin-left: auto; margin-right: auto; width: 290px; height: 150px; ">
-				<div style="width: 290px; height: 150px; color:white;">
+			<div style=" margin-left: auto; margin-right: auto; width: 290px;">
+				<div style="width: 290px; color:white;">
 					<div style="float: left;">
 						<img class="svg" id="u107" width="100" height="50" alt="" src="assets/img/infonavit.png">
 					</div>
 					<div style="float: left;">
-						<div style="width: 180px; height: 150px;  color:white; margin-left: 10px; line-height: 1.9rem">
+						<div style="width: 180px; color:white; margin-left: 10px; line-height: 1.9rem">
 							<span style="font-size: 1rem; color:orangered;">Cotiza tus puntos </span>
 							<span style="font-size: 1.9rem; font-weight: bold; color:orangered;">INFONAVIT</span>
 							<a routerLink="/puntos" class="rk-menu__link">

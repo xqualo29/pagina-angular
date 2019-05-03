@@ -8,6 +8,7 @@ import { PuntosComponent } from './pages/puntos/puntos.component';
 import { CreditoComponent } from './pages/credito/credito.component';
 import { DesarrolloComponent } from './pages/desarrollo/desarrollo.component';
 import { ModeloComponent } from './pages/modelo/modelo.component';
+import { CedroComponent } from './pages/cedro/cedro.component';
 
 const routes: Routes = [
   {path: '', component: PrincipalComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'credito', component: CreditoComponent},
   {path: 'desarrollo', component: DesarrolloComponent},
   {path: 'modelo', component: ModeloComponent},
+  {path: 'cedro', component: CedroComponent},
   {path: '**', pathMatch: 'full', redirectTo: ''}
 ];
 

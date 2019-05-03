@@ -1,128 +1,236 @@
 
 <style>
 
-    header {
-      height: auto;
-      margin-top: 115px;
-    }
-  
-    .wrapper {
-      padding: 5px;
-      max-width: 960px;
-      width: 95%;
-      margin: 20px auto;
-      width: 580px;
-    }
-  
-    .boxfloattext1 {
-      font-weight: bold;
-      font-size:6rem;
-    }
+  .contForm {
+    margin-top: 90px;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    background-image: url('assets/img/blur.jpg');
 
-    .boxfloattext2 {
-      font-size:5.5rem;
-    }
+  }
 
-      @media screen and (max-width: 980px) {
-        .wrapper {
-          width: 480px;
-        }
-        .wrapper .boxfloattext1 {
-          font-size:4rem;
-        }
-        .wrapper .boxfloattext2 {
-          font-size:3.5rem;
-        }
+  .wrapper {
+    padding: 5px;
+    max-width: 960px;
+    width: 100%;
+    margin: 20px auto;
+    width: 580px;
+    height: 200px;
+    
+  }
+
+  .boxfloattext1 {
+    font-weight: bold;
+    font-size:6rem;
+  }
+
+  .boxfloattext2 {
+    font-size:5.5rem;
+  }
+
+  .imgsize{
+      width: 150px;
+      height: 100px;
+    }
+    .hspace{
+      margin-top: 40px
+    }
+    .linecl{
+        margin-top: -25px;
       }
-      @media screen and (max-width: 680px) {
-        .wrapper {
-          width: 350px;
-        }
-        .wrapper .boxfloattext1 {
-          font-size:3rem;
-        }
-        .wrapper .boxfloattext2 {
-          font-size:2.5rem;
-        }
+    @media screen and (max-width: 1280px) {
 
+      .contForm {
+        margin-bottom: 115px;
+      }
+    }
+    @media screen and (max-width: 980px) {
+      .wrapper {
+        width: 480px;
+      }
+      .wrapper .boxfloattext1 {
+        font-size:2rem;
+      }
+      .wrapper .boxfloattext2 {
+        font-size:1.5rem;
+      }
+      .wrapper .imgsize{
+      width: 100px;
+      height: 70px;
+      }
+      .wrapper .cssform .labelcl{
+      font-size: .9rem;
+      }
+      .wrapper .cssform .inputcl{
+        width: 100%;
+        padding: 3px 5px;
+        height: 30px;
       }
 
-  input[type=text], select {
-  width: 100%;
-  padding: 5px 8px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: #666;
+      .contForm {
+        margin-bottom: 100px;
+      }
+
+      .wrapper .linecl{
+        margin-top: -20px;
+      }
+    
+    }
+
+    @media screen and (max-width: 680px) {
+      .wrapper {
+        width: 350px;
+      }
+      .wrapper .boxfloattext1 {
+        font-size:1.5rem;
+      }
+      .wrapper .boxfloattext2 {
+        font-size:1rem;
+      }
+      .wrapper .imgsize{
+      width: 80px;
+      height: 60px;
+      }
+      .wrapper .cssform .labelcl{
+      font-size: .8rem;
+      margin-top: -4px;
+      }
+      .wrapper .cssform .inputcl{
+      width: 90%;
+      padding: 3px 5px;
+      height: 30px;
+      margin-top: -4px;
+      }
+      .wrapper .cssform{
+        padding-top: 1px;
+      }
+      .contForm {
+        margin-bottom: 100px;
+      }
+      .wrapper .cssform .inputbt{
+        padding: 3px 5px;
+      height: 30px;
+      width: 90%;
+      }
+      .wrapper .linecl{
+        margin-top: -15px;
+      }
+    }
+    @media screen and (max-width: 320px) {
+      .wrapper {
+        width: 350px;
+      }
+      .wrapper .boxfloattext1 {
+        font-size:1.5rem;
+      }
+      .wrapper .boxfloattext2 {
+        font-size:1rem;
+      }
+      .wrapper .imgsize{
+      width: 80px;
+      height: 60px;
+      }
+      .wrapper .cssform .labelcl{
+      font-size: .8rem;
+      margin-top: -4px;
+      }
+      .wrapper .cssform .inputcl{
+      width: 90%;
+      padding: 3px 5px;
+      height: 30px;
+      margin-top: -4px;
+      }
+      .wrapper .cssform{
+        padding-top: 1px;
+      }
+      .wrapper .linecl{
+        margin-top: -15px;
+      }
+      .contForm {
+        margin-bottom: 140px;
+      }
+      .wrapper .cssform .inputbt{
+        padding: 3px 5px;
+      height: 30px;
+      width: 90%;
+      }
+    }
+input[type=text], select {
+width: 100%;
+padding: 5px 8px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+color: #666;
 }
 
 input[type=submit] {
-  width: 100%;
-  background-color: #FC4F17;
-  color: white;
-  padding: 10px 18px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+width: 100%;
+background-color: #FC4F17;
+color: white;
+padding: 10px 18px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #FC4F17;
+background-color: #FC4F17;
 }
 
 .cssform {
-  padding: 20px;
-  color: white;
+padding: 20px;
+color: white;
 }
 
 ::placeholder {
-  color:darkgrey;
-  opacity: 1; /* Firefox */
-  font-size: 14px;
+color:darkgrey;
+opacity: 1; /* Firefox */
+font-size: 14px;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: darkgrey;
+color: darkgrey;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
- color: darkgrey;
+color: darkgrey;
 }
-    </style>
-  
-    <header class="item-inside-1Aux"> 
-      <div style="background-color: rgba(252, 79, 23, .3)">
+  </style>
 
-      
-        <div class="wrapper">
+  <div class="contForm"> 
+    <div style="background-color: rgba(252, 79, 23, .3); height: 100%;">
+
+      <div class="wrapper">
+        <div class="hspace">
+          <div style="display:inline-block; text-align: center; color: white">
+            <div class="boxfloattext2" style="float: left;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Agendar</div>
+            <div class="boxfloattext1" style="float: left;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: bolder;margin-left: 15px;">CITA</div>
+          </div>
+          <div class="linecl" style="border: 1px solid #fff;"></div>
   
-            <div style="display:inline-block; text-align: center; color: white">
-                <div class="boxfloattext2" style="float: left;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Agendar</div>
-                <div class="boxfloattext1" style="float: left;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: bolder;margin-left: 15px;">CITA</div>
-              </div>
-              <div style="margin-top: -25px;border: 1px solid #fff;"></div>
-      
-              <div class="cssform">
-                  <form id="frmCita" method="post" enctype="multipart/form-data" action="" data-sizePolicy="fixed" data-pintopage="page_fixedCenter">
-                    <label for="fname">Nombre:</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Introducir nombre..">
-                
-                    <label for="lname">Correo electronico:</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Introducir correo electronico..">
-                
-                    <label for="fname">Numero de telefono:</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Introducir nº de telf..">
-                
-                    <label for="lname">Fecha de la cita:</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Escriba la fecha que desearía la cita..">
-                
-                    <input type="submit" value="Enviar">
-                  </form>
-                </div>  
-        </div>
-      </div>   
-    </header>
-  
+          <div class="cssform">
+              <form id="frmCita" method="post" enctype="multipart/form-data" action="" data-sizePolicy="fixed" data-pintopage="page_fixedCenter">
+                <label class="labelcl" for="fname">Nombre:</label>
+                <input class="inputcl" type="text" id="fname" name="firstname" placeholder="Introducir nombre..">
+            
+                <label class="labelcl" for="lname">Correo electronico:</label>
+                <input class="inputcl" type="text" id="lname" name="lastname" placeholder="Introducir correo electronico..">
+            
+                <label class="labelcl" for="fname">Numero de telefono:</label>
+                <input class="inputcl" type="text" id="fname" name="firstname" placeholder="Introducir nº de telf..">
+            
+                <label class="labelcl" for="lname">Fecha de la cita:</label>
+                <input class="inputcl" type="text" id="lname" name="lastname" placeholder="Escriba la fecha que desearía la cita..">
+            
+                <input class="inputbt" type="submit" value="Enviar">
+              </form>
+            </div>  
+          </div> 
+      </div>
+    </div>   
+  </div> 

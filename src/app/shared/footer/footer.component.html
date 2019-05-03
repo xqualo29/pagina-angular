@@ -11,6 +11,7 @@
   flex: .7;
   margin: 2px;
   padding: 10px;
+  font-size: 1rem;
 }
 .column1 {
   flex: .3;
@@ -29,11 +30,24 @@
 .column1:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 980px) {
+        .columns .column  {
+          font-size: .8rem;
+        }
+
+      }
+      @media screen and (max-width: 680px) {
+        .columns .column  {
+          font-size: .6rem;
+        }
+
+
+      }
 </style>
-<footer style="background-color: black; width: 100%;">
+<footer style="background-color: black; width: 100%; position: fixed; bottom: 0;">
   <section class="columns"> 
 
-    <div class="column" style="color: white; font-family:Arial, Helvetica, sans-serif; font-size: small;"> 
+    <div class="column" style="color: white; font-family:Arial, Helvetica, sans-serif;"> 
     Visítanos en Av. Yaxché esquina Av. Chetumal, SM. 256, Mz 08, Lt 6, Cancún Quintana Ro, México. C.P. 77500. o llámanos al Teléfono: 998 881 00 77 o a nuestro 01-800 1080 1080 Cómo llegar: Sobre Av. López Portillo rumbo a Mérida desviarse en la entrada a Tierra Maya y seguir la Av. Lakin hasta llegar a la Av. Yaxché.
     </div>
 

@@ -1,13 +1,35 @@
 
 <style>
 
-    
+  .contForm {
+    margin-top: 90px;
+    height: 80%;
+    width: 100%;
+    position: absolute;
 
+  }
+
+  .wrapper {
+    padding: 5px;
+    max-width: 960px;
+    width: 100%;
+    margin: 20px auto;
     
-    header {
-      margin-top: 130px;
+  }
+
+  .boxfloattext1 {
+    font-weight: bold;
+    font-size:6rem;
+  }
+
+  .boxfloattext2 {
+    font-size:5.5rem;
+  }
+
+    .hspace{
+      margin-top: 40px
     }
-    
+
     .columns {
       display: flex;
       flex-flow: row wrap;
@@ -35,8 +57,26 @@
       margin-right: 0;
     }
 
-    
+    @media screen and (max-width: 1280px) {
+
+      .contForm {
+        margin-bottom: 115px;
+      }
+    }
     @media screen and (max-width: 980px) {
+      .wrapper {
+        width: 480px;
+      }
+      .wrapper .boxfloattext1 {
+        font-size:2rem;
+      }
+      .wrapper .boxfloattext2 {
+        font-size:1.5rem;
+      }
+
+      .contForm {
+        margin-bottom: 100px;
+      }
       .columns .column {
         margin-bottom: 5px;
         flex-basis: 40%;
@@ -48,96 +88,194 @@
         flex-basis: 100%;
         margin: 0;
       }
+    
     }
+
     @media screen and (max-width: 680px) {
+      .wrapper {
+        width: 350px;
+      }
+      .wrapper .boxfloattext1 {
+        font-size:1.5rem;
+      }
+      .wrapper .boxfloattext2 {
+        font-size:1rem;
+      }
+      .contForm {
+        margin-bottom: 500px;
+      }
       .columns .column {
         flex-basis: 100%;
         margin: 0 0 5px 0;
       }
+      .wrapper .lbltext{
+
+      font-size: .6rem; color:black;
+
+      }
+      .wrapper .lbltitle{
+
+      font-size: .6rem; color:black; font-weight: bold;
+
+      }
+      .wrapper .texttitle{
+
+      font-size: 1rem; color:#FC4F17;
+
+      }
+      .wrapper .texttitle{
+
+      font-size: 1.5rem; font-weight: bold; color:#FC4F17;
+
+      }
     }
-    
-    </style>
-    
-    <header> 
+    @media screen and (max-width: 320px) {
+      .wrapper {
+        width: 350px;
+      }
+      .wrapper .boxfloattext1 {
+        font-size:1.5rem;
+      }
+      .wrapper .boxfloattext2 {
+        font-size:1rem;
+      }
 
-            <section class="columns">
-                <div class="column1">
+      .contForm {
+        margin-bottom: 570px;
+      }
+      .columns .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+      }
+
+      .wrapper .lbltext{
+
+      font-size: .6rem; color:black;
+
+      }
+      .wrapper .lbltitle{
+
+      font-size: .6rem; color:black; font-weight: bold;
+
+      }
+      .wrapper .texttitle{
+
+      font-size: 1rem; color:#FC4F17;
+
+      }
+      .wrapper .texttitle{
+
+      font-size: 1.5rem; font-weight: bold; color:#FC4F17;
+
+      }
+
+    }
+
+.lbltext{
+
+  font-size: .8rem; color:black;
+
+}
+.lbltitle{
+
+  font-size: .8rem; color:black; font-weight: bold;
+
+}
+.texttitle{
+
+  font-size: 1.5rem; color:#FC4F17;
+
+}
+.texttitle{
+
+  font-size: 2.5rem; font-weight: bold; color:#FC4F17;
+
+}
+  </style>
+
+  <div class="contForm"> 
+    <div>
+
+      <div class="wrapper">
+        <div class="hspace">
+          <section class="columns">
+            <div class="column1">
+
+            </div>
+
+            <div class="column" style="text-align:left;line-height: 1.5rem;">
+                <div>
+                    <span class="texttitle">Productos <span class="texttitleAux">INFONAVIT</span> </span>
+                    
 
                 </div>
+            </div>
 
-								<div class="column" style="text-align:left;line-height: 1.5rem;">
-                    <div>
-                        <span style="font-size: 1.5rem; color:#FC4F17;">Productos <span style="font-size: 2.5rem; font-weight: bold; color:#FC4F17;">INFONAVIT</span> </span>
-                        
-    
-                    </div>
-                </div>
- 
-            </section>	
- 
-            <section class="columns">
-              
-								<div class="column1">
-                        <img class="svg" id="u107" width="100" height="50" alt="" src="assets/img/creditoinfo.png">       
-                </div>
-                <div class="column" style="text-align:left;line-height: 1rem;">
-                        <span style="font-size: .8rem; color:black;">
-                        <span style="font-size: .8rem; color:black; font-weight: bold;">El crédito Infonavit</span> es un crédito hipotecario que puedes solicitar en pesos o VSM para que compres, construyas, repares, amplíes, mejores tu vivienda, o bien, pagues la hipoteca de la que ya eres propietario, en el que se suma el saldo de tu Subcuenta de Vivienda.</span>
-                </div>
-       
-            </section>	
+        </section>	
 
-            <section class="columns">
-              
-								<div class="column1">
-                        <img class="svg" id="u107" width="100" height="50" alt="" src="assets/img/infonavitt.jpg">       
-                </div>
-                <div class="column" style="text-align:left;line-height: 1rem;">
-                        <span style="font-size: .8rem; color:black;">
-                        <span style="font-size: .8rem; color:black; font-weight: bold;">Infonavit Total</span> es un crédito hipotecario que puedes solicitar en pesos o VSM para que compres una vivienda, aprovechando toda tu capacidad crediticia, en el que suma el saldo de tu Subcuenta de Vivienda.</span>
-                </div>
-       
-            </section>	
+        <section class="columns">
+          
+            <div class="column1">
+                    <img class="svg" id="u107" width="100" height="50" alt="" src="assets/img/creditoinfo.png">       
+            </div>
+            <div class="column" style="text-align:left;line-height: 1rem;">
+                    <span class="lbltext">
+                    <span class="lbltitle">El crédito Infonavit</span> es un crédito hipotecario que puedes solicitar en pesos o VSM para que compres, construyas, repares, amplíes, mejores tu vivienda, o bien, pagues la hipoteca de la que ya eres propietario, en el que se suma el saldo de tu Subcuenta de Vivienda.</span>
+            </div>
+   
+        </section>	
 
-            <section class="columns">
-                <div class="column1">
+        <section class="columns">
+          
+            <div class="column1">
+                    <img class="svg" id="u107" width="100" height="50" alt="" src="assets/img/infonavitt.jpg">       
+            </div>
+            <div class="column" style="text-align:left;line-height: 1rem;">
+                    <span class="lbltext">
+                    <span class="lbltitle">Infonavit Total</span> es un crédito hipotecario que puedes solicitar en pesos o VSM para que compres una vivienda, aprovechando toda tu capacidad crediticia, en el que suma el saldo de tu Subcuenta de Vivienda.</span>
+            </div>
+   
+        </section>	
+
+        <section class="columns">
+            <div class="column1">
+
+            </div>
+
+            <div class="column" style="text-align:left;line-height: 1.5rem;">
+                <div>
+                    <span class="texttitle">Productos <span class="texttitleAux">COFINAVIT</span> </span>
+                    
 
                 </div>
+            </div>
 
-								<div class="column" style="text-align:left;line-height: 1.5rem;">
-                    <div>
-                        <span style="font-size: 1.5rem; color:#FC4F17;">Productos <span style="font-size: 2.5rem; font-weight: bold; color:#FC4F17;">COFINAVIT</span> </span>
-                        
-    
-                    </div>
-                </div>
- 
-            </section>	
+        </section>	
 
-            <section class="columns">
-              
-								<div class="column1">
-                             
-                </div>
-                <div class="column" style="text-align:left;line-height: 1rem;">
-                        <span style="font-size: .8rem; color:black;">
-                        <span style="font-size: .8rem; color:black; font-weight: bold;">Cofinavit</span> es un crédito en VSM otorgado por el infonavit en conjunto con una entidad financiera en el que se suma el saldo de tu subcuenta de vivienda.</span>
-                </div>
-       
-            </section>	
+        <section class="columns">
+          
+            <div class="column1">
+                         
+            </div>
+            <div class="column" style="text-align:left;line-height: 1rem;">
+                    <span class="lbltext">
+                    <span class="lbltitle">Cofinavit</span> es un crédito en VSM otorgado por el infonavit en conjunto con una entidad financiera en el que se suma el saldo de tu subcuenta de vivienda.</span>
+            </div>
+   
+        </section>	
 
-            <section class="columns">
-              
-								<div class="column1">
-                        <img class="svg" id="u107" width="100" height="50" alt="" src="assets/img/cofiin.png">     
-                </div>
-                <div class="column" style="text-align:left;line-height: 1rem;">
-                        <span style="font-size: .8rem; color:black;">
-                        <span style="font-size: .8rem; color:black; font-weight: bold;">Confinavit Ingresos Adicionales</span> es un crédito hipotecario en VSM otorgado por el infonavit en conjunto con una entidad financiera para trabajadores que reciben ingresos adicionales. Una parte del crédito la otorga en infonavit tomando en cuenta tu salario y la otra mitad la entidad financiera considerando tus propinas o comisiones.</span>
-                </div>
-       
-            </section>	
-    
-    </header>
-    
-    
+        <section class="columns">
+          
+            <div class="column1">
+                    <img class="svg" id="u107" width="100" height="50" alt="" src="assets/img/cofiin.png">     
+            </div>
+            <div class="column" style="text-align:left;line-height: 1rem;">
+                    <span class="lbltext">
+                    <span class="lbltitle">Confinavit Ingresos Adicionales</span> es un crédito hipotecario en VSM otorgado por el infonavit en conjunto con una entidad financiera para trabajadores que reciben ingresos adicionales. Una parte del crédito la otorga en infonavit tomando en cuenta tu salario y la otra mitad la entidad financiera considerando tus propinas o comisiones.</span>
+            </div>
+   
+        </section>	
+          </div> 
+      </div>
+    </div>   
+  </div> 

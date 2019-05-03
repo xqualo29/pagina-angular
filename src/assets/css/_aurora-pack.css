@@ -77,8 +77,8 @@ html {
 }
 @media (max-width: 63.99em) {
   .ae-container-fluid {
-    padding-left: .25rem;
-    padding-right: .25rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

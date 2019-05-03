@@ -1,19 +1,28 @@
 
 <style>
 
-    header {
+    .contForm {
+      margin-top: 100px;
       height: auto;
-      margin-top: 115px;
+      width: 100%;
+      position: absolute;
     }
-  
+
     .wrapper {
 
+    width: 100%;
+    background-image: url('assets/img/ceibas.jpg');
+      background-position: 100% 50%;
+      background-size: 150%;
+  }
 
-      width: 100%;
+  .wrapper2 {
 
-    }
-  
-    .columns {
+width: 100%;
+margin-bottom: 120px;
+}
+
+  .columns {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -127,10 +136,10 @@
         }
 
       }
-
     </style>
   
-    <header class="item-inside-1Aux2"> 
+    <div class="contForm"> 
+   
         <div class="wrapper">
   
             <section class="columns"> 
@@ -178,47 +187,49 @@
 
 
         </div>
-
-    </header>
-
-    <section class="columns"> 
+        <div class="wrapper2">
+        <section class="columns"> 
   
-        <div class="column1"> 
-       
-        </div>
-        
-    
-        <div class="column1" style="background-image: url('assets/img/cedro-layer%200%20copy.png?crc=487970491');"> 
-          
-          <a routerLink="/agendarcita" class="rk-menu__link"><div class="backimg">
-            <div style="padding-top: 50%">
-              CEDRO
+            <div class="column1"> 
+           
             </div>
-          </div></a>
-          
-        </div>
-    
-        <div class="column1" style="background-image: url('assets/img/ceiba.png?crc=3796803990');"> 
-          <a routerLink="/agendarcita" class="rk-menu__link"><div class="backimg">
-            <div style="padding-top: 50%">
-              CEIBA
-            </div>
-          </div></a>
-        </div>
-          
-      
-          <div class="column1" style="background-image: url('assets/img/nogal.png?crc=481237397');"> 
-            <a routerLink="/agendarcita" class="rk-menu__link"><div class="backimg">
-              <div style="padding-top: 50%">
-                NOGAL
-              </div>
-            </div></a>
-          </div>
             
         
-            <div class="column1"> 
-                
+            <div class="column1" style="background-image: url('assets/img/cedro.png');"> 
+              
+              <a routerLink="/cedro" class="rk-menu__link"><div class="backimg">
+                <div style="padding-top: 50%">
+                  CEDRO
+                </div>
+              </div></a>
+              
             </div>
+        
+            <div class="column1" style="background-image: url('assets/img/ceiba.png?crc=3796803990');"> 
+              <a routerLink="/agendarcita" class="rk-menu__link"><div class="backimg">
+                <div style="padding-top: 50%">
+                  CEIBA
+                </div>
+              </div></a>
+            </div>
+              
+          
+              <div class="column1" style="background-image: url('assets/img/nogal.png?crc=481237397');"> 
+                <a routerLink="/agendarcita" class="rk-menu__link"><div class="backimg">
+                  <div style="padding-top: 50%">
+                    NOGAL
+                  </div>
+                </div></a>
+              </div>
+                
+            
+                <div class="column1"> 
+                    
+                </div>
+        
+          </section>
+        </div>
+
+    </div> 
+
     
-      </section>
-  
