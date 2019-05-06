@@ -1,0 +1,152 @@
+
+<style>
+
+    .contForm {
+      margin-top: 90px;
+      height: auto;
+      width: 100%;
+      position: absolute;
+    }
+
+    .contForm2 {
+      height: 568px;
+      width: 100%;
+      position: absolute;
+    }
+
+    .wrapper {
+    padding: 3px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 10px auto;
+  }
+    .columns {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin: 2px 0;
+    }
+    
+    .column {
+      flex: 1;
+      margin: 5px;
+      padding: 5px;
+    }
+    .column:first-child {
+      margin-left: 0;
+    }
+    .column:last-child {
+      margin-right: 0;
+    }
+    
+    @media screen and (max-width: 980px) {
+      .columns .column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+      }
+      .columns .column:nth-last-child(2) {
+        margin-right: 0;
+      }
+      .columns .column:last-child {
+        flex-basis: 100%;
+        margin: 0;
+      }
+      .columns .column .boxfloattext1 {
+        font-size:1.5rem;
+      }
+      .columns .column .boxfloattext2 {
+        font-size:.8rem;
+        line-height: .9rem
+      }
+      .columns .column .boxfloattext3 {
+        font-size:.8rem;
+      }
+    }
+    @media screen and (max-width: 680px) {
+      .columns .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+      }
+      .columns .column .boxfloattext1 {
+        font-size:1.2rem;
+      }
+      .columns .column .boxfloattext2 {
+        font-size:.6rem;
+        line-height: .8rem
+      }
+      .columns .column .boxfloattext3 {
+        font-size:.6rem;
+      }
+      .wrapper{
+      margin-top: 20px;
+		}
+    }
+    @media screen and (max-width: 320px) {
+		.wrapper{
+			margin-bottom: 180px;
+      margin-top: 60px;
+		}
+	}
+.boxfloattext1 {
+  font-weight: bold;
+	font-size:2rem;
+}
+.boxfloattext2 {
+  font-size:1.2rem;
+  line-height: 1.2rem
+}
+.boxfloattext3 {
+  font-size:.8rem;
+}
+    </style>
+
+  <div class="contForm"> 
+   
+      <div class="wrapper">
+          <section class="columns boxfloattext1"> 
+
+              <div class="column" style="color:darkgrey; font-family:Arial, Helvetica, sans-serif; text-align: center; font-weight: bold"> 
+              Ubicación
+              </div>
+          
+          
+          </section>
+        
+          <section class="columns boxfloattext2"> 
+        
+                <div class="column" style="color: darkgrey; font-family:Arial, Helvetica, sans-serif; text-align: center; font-weight: bold"> 
+                    Dirección: Av. Yaxché esquina Av. Chetumal, SM. 256, Mz 08, Lt 6, Cancún Quintana Ro, México. C.P. 77500. Cómo llegar: Sobre Av. López Portillo rumbo a Mérida desviarse en la entrada a Tierra Maya y seguir la Av. Lakin hasta llegar a la Av. Yaxché. Para llegar al fraccionamiento: 
+                </div>
+            
+            
+          </section>
+          <section class="columns boxfloattext2"> 
+        
+                  <div class="column" style="color: firebrick; font-family:Arial, Helvetica, sans-serif; text-align: center; font-weight: bold"> 
+                      TRANSPORTE PÚBLICO
+                  </div>
+              
+              
+          </section>
+          <section class="columns"> 
+        
+              <div class="column boxfloattext3" style="color: firebrick; font-family:Arial, Helvetica, sans-serif; text-align: center; font-weight: bold"> 
+                  Turicun: Ruta 16 y 20 ciudad y Ruta 2 Zona Hotelera
+              </div>
+              <div class="column boxfloattext3" style="color: firebrick; font-family:Arial, Helvetica, sans-serif; text-align: center; font-weight: bold"> 
+                  Autocar: Ruta 17 y 44 ciudad
+              </div>
+              <div class="column boxfloattext3" style="color: firebrick; font-family:Arial, Helvetica, sans-serif; text-align: center; font-weight: bold"> 
+                  Combi: Ruta 44, 71, 78, 80, 102 ciudad
+              </div>
+          
+      </section>
+
+      </div>
+      <div class="contForm2"> 
+          <iframe class="actAsDiv" style="width:100%;height:100%;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;q=prado%20norte%2C%20cancun&amp;aq=0&amp;ie=UTF8&amp;t=m&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe>
+      </div>
+
+  </div>
+ 
+  

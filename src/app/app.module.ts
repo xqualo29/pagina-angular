@@ -14,6 +14,10 @@ import { CreditoComponent } from './pages/credito/credito.component';
 import { DesarrolloComponent } from './pages/desarrollo/desarrollo.component';
 import { ModeloComponent } from './pages/modelo/modelo.component';
 import { CedroComponent } from './pages/cedro/cedro.component';
+import { CeibaComponent } from './pages/ceiba/ceiba.component';
+import { NogalComponent } from './pages/nogal/nogal.component';
+import { UbicacionComponent } from './pages/ubicacion/ubicacion.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { CedroComponent } from './pages/cedro/cedro.component';
     CreditoComponent,
     DesarrolloComponent,
     ModeloComponent,
-    CedroComponent
+    CedroComponent,
+    CeibaComponent,
+    NogalComponent,
+    UbicacionComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
