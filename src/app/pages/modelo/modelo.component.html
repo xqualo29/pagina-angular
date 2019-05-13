@@ -13,7 +13,7 @@
     width: 100%;
     background-image: url('assets/img/ceibas.jpg');
       background-position: 100% 50%;
-      background-size: 150%;
+      background-size: 100%;
   }
 
   .wrapper2 {
@@ -32,7 +32,6 @@ margin-bottom: 120px;
       .column {
         flex: 1;
         margin: 5px;
-        padding: 10px;
       }
       .column:first-child {
         margin-left: 0;
@@ -41,12 +40,46 @@ margin-bottom: 120px;
         margin-right: 0;
       }
       .boxfloattext1 {
-        font-weight: bold;
-        font-size:3rem;
+        font-size:7rem;
+        line-height: 6rem;
       }
       .boxfloattext2 {
-        font-size:1rem;
+        font-size:6rem;
+        line-height: 5rem;
       }
+      .boxfloattext3 {
+        font-weight: bold;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size:3.5rem;
+        line-height: 3.5rem;
+      }
+
+      @media screen and (max-width: 1280px) {
+        .columns .column {
+          margin-bottom: 5px;
+          flex-basis: 40%;
+        }
+        .columns .column:nth-last-child(2) {
+          margin-right: 0;
+        }
+        .columns .column:last-child {
+          flex-basis: 60%;
+          margin: 0;
+        }
+        .columns .column .boxfloattext1 {
+          font-size:4rem;
+          line-height: 4rem;
+        }
+        .columns .column .boxfloattext2 {
+          font-size:3rem;
+          line-height: 3rem;
+        }
+        .columns .column .boxfloattext3 {
+          font-size:3rem;
+          line-height: 3rem;
+        }
+      }
+
       @media screen and (max-width: 980px) {
         .columns .column {
           margin-bottom: 5px;
@@ -60,10 +93,16 @@ margin-bottom: 120px;
           margin: 0;
         }
         .columns .column .boxfloattext1 {
-          font-size:1.8rem;
+          font-size:3rem;
+          line-height: 3rem;
         }
         .columns .column .boxfloattext2 {
-          font-size:.8rem;
+          font-size:2rem;
+          line-height: 2rem;
+        }
+        .columns .column .boxfloattext3 {
+          font-size:2.5rem;
+          line-height: 2.5rem;
         }
       }
       @media screen and (max-width: 680px) {
@@ -72,13 +111,37 @@ margin-bottom: 120px;
           margin: 0 0 5px 0;
         }
         .columns .column .boxfloattext1 {
-          font-size:1.2rem;
+          font-size:3em;
+          line-height: 3rem;
         }
         .columns .column .boxfloattext2 {
-          font-size:.6rem;
+          font-size:2rem;
+          line-height: 2rem;
+        }
+        .columns .column .boxfloattext3 {
+          font-size:1.5rem;
+          line-height: 1.5rem;
         }
       }
-
+      @media screen and (max-width: 460px) {
+        .columns .column {
+          flex-basis: 40%;
+          margin: 0 0 5px 0;
+        }
+        .columns .column .boxfloattext1 {
+          font-size:1.5em;
+          line-height: 1.5rem;
+        }
+        .columns .column .boxfloattext2 {
+          font-size:1rem;
+          line-height: 1rem;
+        }
+        .columns .column .boxfloattext3 {
+          font-size:1rem;
+          line-height: 1rem;
+        }
+      }
+      
       .column1 {
         flex: 1;
         margin: 5px;
@@ -144,18 +207,19 @@ margin-bottom: 120px;
   
             <section class="columns"> 
   
-              <div class="column" style="color: white;"> 
-             <div class="boxfloattext1"><span style="font-weight:bolder;">SE VIVE BIEN</span></div>
-             <div class="boxfloattext1">Y SI TE ALCANZA</div>
+              <div class="column" style="color: white; padding-left: 80px; padding-top: 50px"> 
+             <div class="boxfloattext1"><span style="font-weight:900;">SE VIVE</span></div>
+             <div class="boxfloattext1"><span style="font-weight:900;">BIEN </span><span class="boxfloattext2"> Y SI</span></div>
+             <div class="boxfloattext2">TE ALCANZA</div>
              <a routerLink="/agendarcita" class="rk-menu__link"><div style="border-radius: 15px;
-              background:firebrick;
+              background:#b83d05;
               width: 200px;
               height: 40px; 
-              border:4px solid firebrick;
+              border:4px solid #b83d05;
               text-align:center;
               padding: 5px;
               margin-top: 1rem;
-              margin-left: 2rem;
+              margin-left: 20%;
               ">
               Agendar cita
               </div></a>
@@ -174,8 +238,8 @@ margin-bottom: 120px;
                 </div>
                 
     
-                <div class="column" style="color: white;"> 
-                    <div class="boxfloattext1">Modelo de casas</div>
+                <div class="column" style="color: white; padding-left: 20%"> 
+                    <div class="boxfloattext3">Modelo de casas</div>
                 </div>
   
               </section>

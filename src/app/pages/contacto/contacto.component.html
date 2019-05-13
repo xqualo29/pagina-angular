@@ -497,11 +497,13 @@ margin-bottom: 0;
       margin-left: 20%;
     }
     .contenido3{
-      width: 100%; 
-      margin-top: 100px; 
-      
+      width: 100%;      
       height: 100%;
       position: absolute;
+      background-image: url('assets/img/8.jpg');
+      background-repeat:no-repeat;
+      background-position: 100% 50%;
+        background-size: 100%;
   }
   input[type=text], select {
   width: 100%;
@@ -550,11 +552,10 @@ margin-bottom: 0;
   .contForm {
       height: 100%;
       width: 100%;
-      background-image: url('assets/img/blur.jpg');
-  
+
     }
     .contFormAux {
-      
+      margin-top: 100px; 
       width: 40%
     }
     .contFormAuxMsj {
@@ -571,7 +572,7 @@ margin-bottom: 0;
       margin: 20px auto;
      
       height: 100%;
-      background-color:rgba(128, 0, 0, 0.9);
+      background-color:#b93606;
       
     }
   
@@ -594,49 +595,57 @@ margin-bottom: 0;
     }
   </style>
 
-  <div class="contenido3">
-      <div class="contForm"> 
-  
-          <div class="contFormAuxMsj" style="float: left;">
-              <div style="margin-top: 10%">
-                  <div class="boxfloattext4" style="margin-left:15%;"><span style="font-weight:bolder;">SE VIVE</span></div>
-                  <div class="boxfloattext4" style="margin-left:15%;"><span style="font-weight:bolder;">BIEN</span> Y SI</div>
-                  <div class="boxfloattext4" style="margin-left:15%;">TE ALCANZA</div>
-                  <div class="text1"><a routerLink="/agendarcita" class="rk-menu__link">
-                    <div style="border-radius: 15px;background:firebrick;width: 200px;height: 40px; border:4px solid firebrick;text-align:center;padding: 5px;margin-top: 1rem;margin-left: 2rem;">Agendar cita</div></a></div>
-                   
+<div class="contenido3">
+    <div class="contForm"> 
+
+        <div class="contFormAuxMsj" style="float: left;">
+            <div style="margin-top: 10%">
+                <div class="boxfloattext4" style="margin-left:15%;"><span style="font-weight:bolder;">SE VIVE</span></div>
+                <div class="boxfloattext4" style="margin-left:15%;"><span style="font-weight:bolder;">BIEN</span> Y SI</div>
+                <div class="boxfloattext4" style="margin-left:15%;">TE ALCANZA</div>
+                <div class="text1"><a routerLink="/agendarcita" class="rk-menu__link">
+                  <div style="border-radius: 15px;background:#b93606;width: 200px;height: 40px; border:4px solid #b93606;text-align:center;padding: 5px;margin-top: 1rem;margin-left: 2rem;">Agendar cita</div></a></div>
+                 
+              </div>
+        </div>
+
+
+        <div class="contFormAux" style="float: left;">
+    
+          <div class="wrapper">
+            <div class="hspace">
+
+              <div style="text-align: center; color: white; text-align: center;">
+                <div class="boxfloattext5" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">Teléfono:(998)8810077
+                    <a href="https://www.facebook.com/PradoNorteCasasCancun" class="rk-social-btnAuxR " style="margin-left: 10px;">
+                      <svg>
+                        <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
+                      </svg></a> Prado Norte Cancun
                 </div>
-          </div>
-  
-  
-          <div class="contFormAux" style="float: left; margin-right: 0;">
+                
+                <div class="boxfloattext1" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">Contacto</div>
+              </div>
       
-            <div class="wrapper">
-              <div class="hspace">
-                <div style="display:inline-block; text-align: center; color: white">
-                  <div class="boxfloattext1" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: bolder;">Contacto</div>
-                </div>
-        
-                <div class="cssform">
-                    <form id="frmCita" method="post" enctype="multipart/form-data" action="" data-sizePolicy="fixed" data-pintopage="page_fixedCenter">
-                      <label class="labelcl" for="fname">Nombre:</label>
-                      <input class="inputcl" type="text" id="fname" name="firstname" placeholder="Introducir nombre..">
-                  
-                      <label class="labelcl" for="lname">Correo electronico:</label>
-                      <input class="inputcl" type="text" id="lname" name="lastname" placeholder="Introducir correo electronico..">
-                  
-                      <label class="labelcl" for="fname">Numero de telefono:</label>
-                      <input class="inputcl" type="text" id="fname" name="firstname" placeholder="Introducir nº de telf..">
-                  
-                      <label class="labelcl" for="lname">Mensaje:</label>
-                      <input class="inputcl" type="text" id="lname" name="lastname" placeholder="Escriba su mensaje..">
-                  
-                      <input class="inputbt" type="submit" value="Enviar">
-                    </form>
-                  </div>  
-                </div> 
-            </div>
-          </div>   
-        </div> 
-  </div>
+              <div class="cssform">
+                  <form id="frmCita" method="post" enctype="multipart/form-data" action="" data-sizePolicy="fixed" data-pintopage="page_fixedCenter">
+                    <label class="labelcl" for="fname">Nombre:</label>
+                    <input class="inputcl" type="text" id="fname" name="firstname" placeholder="Introducir nombre..">
+                
+                    <label class="labelcl" for="lname">Correo electronico:</label>
+                    <input class="inputcl" type="text" id="lname" name="lastname" placeholder="Introducir correo electronico..">
+                
+                    <label class="labelcl" for="fname">Numero de telefono:</label>
+                    <input class="inputcl" type="text" id="fname" name="firstname" placeholder="Introducir nº de telf..">
+                
+                    <label class="labelcl" for="lname">Mensaje:</label>
+                    <input class="inputcl" type="text" id="lname" name="lastname" placeholder="Escriba su mensaje..">
+                
+                    <input class="inputbt" type="submit" value="Enviar">
+                  </form>
+                </div>  
+              </div> 
+          </div>
+        </div>   
+      </div> 
+</div>
   
