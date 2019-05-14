@@ -156,100 +156,6 @@
       transition: all 0.8s ease-in-out;
     }
   
-  
-    /*=====================================================
-     Article
-  =====================================================*/
-    #content-slider .slider h1,
-    #content-slider .th h1 {
-      color: #fffefe;
-      text-transform: uppercase;
-      padding: 0;
-      margin: 0;
-      font-weight: bold;
-    }
-  
-    #content-slider .slider p,
-    #content-slider .th p {
-      color: #fffefe;
-      text-transform: uppercase;
-      padding: 0;
-      margin: 0;
-    }
-  
-    #content-slider .slider a,
-    #content-slider .th a {
-      font-weight: bold;
-      color: #00ABFA;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-  
-  
-    /*=====================================================
-     Article Image Slider
-  =====================================================*/
-    #content-slider .slider h1 {
-      font-size: 3.0em;
-      line-height: 2em;
-    }
-  
-    #content-slider .slider p {
-      font-size: 2.3em;
-      line-height: 1.2em;
-    }
-  
-    #content-slider .slider a {
-      font-size: 1.7em;
-      line-height: 1.5em;
-    }
-  
-  
-    /*=====================================================
-     Article Image Preview
-  =====================================================*/
-    #content-slider .th h1 {
-      font-size: 2em;
-      line-height: 1.2em;
-    }
-  
-    #content-slider .th p {
-      font-size: 1.2em;
-      line-height: 1.7em;
-    }
-  
-    #content-slider .th a {
-      font-size: 1.55em;
-      line-height: 1.55em;
-    }
-  
-    #content-slider .th img {
-      position: relative;
-      max-width: 100%;
-      height: auto !important;
-  
-      -webkit-filter: brightness(50%);
-      -moz-filter: brightness(50%);
-      -ms-filter: brightness(50%);
-      -o-filter: brightness(50%);
-      filter: brightness(50%);
-  
-      -webkit-transition: all 0.5s ease-in-out;
-      -moz-transition: all 0.5s ease-in-out;
-      -ms-transition: all 0.5s ease-in-out;
-      -o-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out;
-    }
-  
-    #content-slider .th:hover img {
-      -webkit-filter: brightness(100%);
-      -moz-filter: brightness(100%);
-      -ms-filter: brightness(100%);
-      -o-filter: brightness(100%);
-      filter: brightness(100%);
-    }
-  
-  
     /*=====================================================
      Main Image
   =====================================================*/
@@ -346,30 +252,6 @@
   
     /* STRUCTURE */
   
-    .columns {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      margin: 5px 0;
-  
-    }
-  
-    .column {
-      flex: 1;
-      margin: 2px;
-      padding: 10px;
-      height: 250px;
-  
-    }
-  
-    .column:first-child {
-      margin-left: 0;
-    }
-  
-    .column:last-child {
-      margin-right: 0;
-    }
-  
     .columnsimg {
       display: flex;
       flex-flow: row wrap;
@@ -431,9 +313,6 @@
         margin-left:30%;
       }
   
-      .columns .column  {
-        height: 240px;
-      }
       #content-slider .wrap-slider {
   
       
@@ -441,30 +320,28 @@
   
     }
   
-      .contenido2 .contimgAux{
-      margin-left: 12%;
-      }
-      .contenido3 .contForm {
+  
+      .contenido3 {
         height: 110%;
         margin-bottom: 100px;
   
       }
-          .contenido3 .contForm .contFormAuxMsj {
+          .contenido3 .contFormAuxMsj {
   
           width: 50%
           }
   
-          .contenido3 .contForm .contFormAux{
+          .contenido3 .contFormAux{
   
           width: 50%
       }
   
-      .contenido3 .contForm .contFormAuxMsj .boxfloattext4{
-        line-height: 2em;
-      font-size: 2rem;
+      .contenido3 .contFormAuxMsj .boxfloattext4{
+        line-height: 4rem;
+      font-size: 4rem;
       }
   
-      .contenido3 .contForm .contFormAuxMsj .text1{
+      .contenido3 .contFormAuxMsj .text1{
       margin-left: 15%
       }
   
@@ -533,38 +410,43 @@
       .floatcont .contlbl{
         width: 220px;
       }
-  
-   
-      .contenido2 .contimgAux{
-      margin-left: 10%;
+      .contenido2 {
       
+      height: 50px;
+      
+    }
+   
+      .contenido2 .contimgAux .classimg{
+      
+        width: 250px;
+  
       }
   
       .contenido2 .contimgAux .contimg2{
       width: 250px;
   
       }
-      .contenido3 .contForm {
-        height: 180%;
-        margin-bottom: 100px;
+      .contenido3 {
+        height: 100%;
+        
       }
-          .contenido3 .contForm .contFormAuxMsj {
-            margin-left: 20%;
+          .contenido3 .contFormAuxMsj {
       width: 100%
       }
   
-      .contenido3 .contForm .contFormAux{
-  
-        margin-left: 20%;
-      width: 60%
+      .contenido3 .contFormAux{
+        margin-left: 10%;
+      width: 80%;
+      height: 100%;
+      margin-bottom: 100px;
       }
   
-      .contenido3 .contForm .contFormAuxMsj .boxfloattext4{
-      line-height: 1.5em;
-      font-size: 3rem;
+      .contenido3 .contFormAuxMsj .boxfloattext4{
+      line-height: 4rem;
+      font-size: 4rem;
       }
   
-      .contenido3 .contForm .contFormAuxMsj .text1{
+      .contenido3 .contFormAuxMsj .text1{
       margin-left: 20%;
       }
   
@@ -616,6 +498,8 @@
   
       .columnsimg{
         margin-top: 500px;
+        margin-left: 0;
+        margin-right: 0;
       }
       .columnsimg .columnimg{
         font-size: .4rem;
@@ -623,8 +507,8 @@
       }
       
     .contenido2 .contimgAux .classimg{
-      width: 170px;
-      height: 120px;
+      width: 150px;
+      height: 110px;
       }
       .contenido2 .contimgAux{
       margin-left: 10%;
@@ -635,33 +519,29 @@
       
       }
   
-      .contenido3 .contForm .contFormAux .wrapper{
-        width: 350px;
+      .contenido3 {
+        height: 100%;
+      }   
+      .contenido3 .contFormAuxMsj {
+      width: 100%
       }
-      .contenido3 .contForm {
-        margin-top: 20px;
-        height: 165%;
-        margin-bottom: 20px;
-  }
-      .contenido3 .contForm .contFormAuxMsj {
-        margin-left: 10%;
-  width: 100%
-  }
   
-  .contenido3 .contForm .contFormAux{
+      .contenido3 .contFormAux{
+      margin-left: 5%;
+      width: 350px;
+      height: 430px;
+      margin-bottom: 110px;
+      }
   
-    margin-left: 2%;
-  width: 100%
-  }
+      .contenido3 .contFormAuxMsj .boxfloattext4{
+      line-height: 2rem;
+      font-size: 2rem;
+      }
   
-  .contenido3 .contForm .contFormAuxMsj .boxfloattext4{
-  line-height: 1em;
-  font-size: 2rem;
-  }
+      .contenido3 .contFormAuxMsj .text1{
+      margin-left: 10%;
+      }
   
-  .contenido3 .contForm .contFormAuxMsj .text1{
-  margin-left: 10%;
-  }
       .wrapper .boxfloattext1 {
           font-size:1.5rem;
         }
@@ -688,9 +568,7 @@
         .wrapper .linecl{
           margin-top: -15px;
         }
-        .contForm {
-          margin-bottom: 140px;
-        }
+  
         .wrapper .cssform .inputbt{
           padding: 3px 5px;
         height: 30px;
@@ -727,9 +605,10 @@
       width: 60px;
   
     }
-    .contFormAux .wrapper .boxfloattext5 {
-      font-size:.6rem;
+    .contenido3 .contFormAux .wrapper .boxfloattext5 {
+      font-size:.7rem;
     }
+  
     }
     @media screen and (max-width: 370px) {
       .wrapper{
@@ -738,40 +617,22 @@
   
       .contenido2 .contimgAux{
       margin-left: 5%;
-      margin-top: 200px;
-      margin-bottom: 150px;
+      margin-top: 0;
+      margin-bottom: 0;
       }
       .contenido2 .contimgAux .contimg2{
       width: 100px;
       
       }
-      .contenido3 .contForm .contFormAux .wrapper{
-        width: 350px;
+      .contenido3{
+        margin-top: 0;
+        margin-bottom: 0;
       }
-      .contenido3 .contForm {
-        margin-top: 10px;
-        height: 190%;
-        margin-bottom: 100px;
-  }
-      .contenido3 .contForm .contFormAuxMsj {
-        margin-left: 5%;
-  width: 100%
-  }
+      .contenido3 .contFormAux{
   
-  .contenido3 .contForm .contFormAux{
+        margin-left: 0;
+      }
   
-    margin-left: 5%;
-  width: 100%
-  }
-  
-  .contenido3 .contForm .contFormAuxMsj .boxfloattext4{
-  line-height: 1em;
-  font-size: 1.5rem;
-  }
-  
-  .contenido3 .contForm .contFormAuxMsj .text1{
-  margin-left: 10%;
-  }
       .wrapper .boxfloattext1 {
           font-size:1.5rem;
         }
@@ -806,39 +667,49 @@
         height: 30px;
         width: 90%;
         }
+        .columnsimg{
+          margin-left: 0;
+          margin-right: 0;
+        }
+  
+        .columnsimg .columnimg{
+        font-size: .3rem;
+        flex: 1;
+        }
+  
         .columnsimg .columnimg .imageclss1{
   
-  width: 30px;
+        width: 30px;
   
-  }
-  .columnsimg .columnimg .imageclss2{
+        }
+        .columnsimg .columnimg .imageclss2{
   
-  width: 100px;
+        width: 50px;
   
-  }
-  .columnsimg .columnimg .imageclss3{
+        }
+        .columnsimg .columnimg .imageclss3{
   
-  width: 30px;
+        width: 20px;
   
-  }
-  .columnsimg .columnimg .imageclss4{
+        }
+        .columnsimg .columnimg .imageclss4{
   
-  width: 25px;
+        width: 25px;
   
-  }
-  .columnsimg .columnimg .imageclss5{
+        }
+        .columnsimg .columnimg .imageclss5{
   
-  width: 30px;
+        width: 30px;
   
-  }
-  .columnsimg .columnimg .imageclss6{
+        }
+        .columnsimg .columnimg .imageclss6{
   
-  width: 60px;
+        width: 40px;
   
-  }
-  .contFormAux .wrapper .boxfloattext5 {
-      font-size:.6rem;
-    }
+        }
+        .contFormAux .wrapper .boxfloattext5 {
+            font-size:.6rem;
+          }
     
     }  
   
@@ -861,7 +732,7 @@
     }
     .contenido{
       
-      margin-top: 50px; 
+      margin-top: 100px; 
       margin-bottom: 50px; 
   
     }
@@ -871,44 +742,38 @@
     .contenido2{
       
       margin-bottom: 350px; 
+      height: 180px;
   
     }
     .contimgAux{
-      float: left; 
-      margin-left: 20%;
+      float: right; 
     }
-    .contenido3{
-      
-  margin-bottom: 100px; 
-  height: 80%;
-  width: 100%;
-  position: absolute;
-  }
-  input[type=text], select {
-  width: 100%;
-  padding: 5px 8px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: #666;
-  }
   
-  input[type=submit] {
-  width: 100%;
-  background-color: #FC4F17;
-  color: white;
-  padding: 10px 18px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  }
+    input[type=text], select {
+    width: 100%;
+    padding: 5px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #666;
+    }
   
-  input[type=submit]:hover {
-  background-color: #FC4F17;
-  }
+    input[type=submit] {
+    width: 100%;
+    background-color: #FC4F17;
+    color: white;
+    padding: 10px 18px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+  
+    input[type=submit]:hover {
+    background-color: #FC4F17;
+    }
   
   .cssform {
   padding: 20px;
@@ -931,26 +796,13 @@
   .contForm {
       height: 100%;
       width: 100%;
-      background-image: url('assets/img/8.jpg');
-      background-repeat:no-repeat;
-      background-position: 100% 50%;
-        background-size: 100%;
-    }
-    .contFormAux {
-      width: 40%
-    }
-    .contFormAuxMsj {
   
-      width: 60%;
-      padding: 5px;
-      margin: 20px auto;
-      color: #ffffff;
     }
+   
     .wrapper {
       padding: 5px;
       max-width: 960px;
       width: 100%;
-      margin: 20px auto;
       height: 100%;
       background-color:#b93606;
       
@@ -974,12 +826,12 @@
     margin-left:30%;
     }
     .classimg{
-      content:url('assets/img/nogal360.png');
+      content:url('assets/img/cedro3602.png');
       width: 250px;
     height: 180px;
     }
     .classimg:hover{
-      content:url('assets/img/nogal3602.png');
+      content:url('assets/img/cedro360.png');
       width: 250px;
     height: 180px;
     }
@@ -1025,7 +877,30 @@
       width: 100px;
   
     }
+    .contenido3{
+      
+      margin-bottom: 100px; 
+      height: 550px;
+      width: 100%;
+   
+      }
+      
+    .contFormAux {
+      width: 40%
+    }
+    .contFormAuxMsj {
+  
+      width: 60%;
+      height: 545px;
+      padding: 5px;
+      color: #ffffff;
+      background-image: url('assets/img/8.jpg');
+      background-repeat:no-repeat;
+      background-position: 100% 50%;
+      background-size: 100% 545px;
+    }
   </style>
+  
   
   <div class="floatcont">
     <div class="contlbl" style="margin-top: 1%;padding: 20px;">
@@ -1168,6 +1043,10 @@
   </div>
   
   <div class="contenido2">
+      <div class="contimgAux">
+          <img class="contimg2" src="assets/img/360nogal.png" width="600" height="300">
+    
+      </div>
     <div class="contimgAux">
 
           <a href="https://my.matterport.com/show/?m=d3J4XyB3Nxp" target="_blank" class="rk-menu__link">
@@ -1175,30 +1054,21 @@
           
           </a>
     </div>
-    <div class="contimgAux">
-        <img class="contimg2" src="assets/img/360nogal.png" width="400" height="150">
-  
-    </div>
   
   </div>
   <div class="contenido3">
-      <div class="contForm"> 
-  
-          <div class="contFormAuxMsj" style="float: left;">
-              <div style="margin-top: 10%">
-                  <div class="boxfloattext4" style="margin-left:15%;"><span style="font-weight:bolder;">SE VIVE</span></div>
-                  <div class="boxfloattext4" style="margin-left:15%;"><span style="font-weight:bolder;">BIEN</span> Y SI</div>
-                  <div class="boxfloattext4" style="margin-left:15%;">TE ALCANZA</div>
-                  <div class="text1"><a routerLink="/agendarcita" class="rk-menu__link">
-                    <div style="border-radius: 15px;background:#b93606;width: 200px;height: 40px; border:4px solid #b93606;text-align:center;padding: 5px;margin-top: 1rem;margin-left: 2rem;">Agendar cita</div></a></div>
-                   
-                </div>
-          </div>
-  
-  
-          <div class="contFormAux" style="float: left;">
-      
-            <div class="wrapper">
+      <div class="contFormAuxMsj" style="float: left;"> 
+          <div style="margin-top: 10%">
+              <div class="boxfloattext4" style="margin-left:15%;"><span style="font-weight:bolder; font-family: 'Arial Black', Gadget, sans-serif;">SE VIVE</span></div>
+              <div class="boxfloattext4" style="margin-left:15%;"><span style="font-weight:bolder; font-family: 'Arial Black', Gadget, sans-serif;">BIEN</span><span style="font-weight:600;"> Y SI</span></div>
+              <div class="boxfloattext4" style="margin-left:15%;"><span style="font-weight:600;">TE ALCANZA</span></div>
+              <div class="text1"><a routerLink="/agendarcita" class="rk-menu__link">
+                <div style="border-radius: 15px;background:#b93606;width: 200px;height: 40px; border:4px solid #b93606;text-align:center;padding: 5px;margin-top: 1rem;margin-left: 2rem;">Agendar cita</div></a></div>
+               
+            </div>
+      </div>
+      <div class="contFormAux" style="float: left;"> 
+          <div class="wrapper">
               <div class="hspace">
   
                 <div style="text-align: center; color: white; text-align: center;">
@@ -1231,7 +1101,7 @@
                   </div>  
                 </div> 
             </div>
-          </div>   
-        </div> 
+      </div>
+  
   </div>
   

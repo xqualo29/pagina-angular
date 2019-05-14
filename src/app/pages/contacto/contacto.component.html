@@ -1,510 +1,501 @@
 <style>
   
     /* STRUCTURE */
-  
-    .columns {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      margin: 5px 0;
-  
+
+  .columnsimg {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+	}
+
+	.columnimg {
+		flex: .8;
+		margin: 2px;
+		padding: 10px;
+    font-size: .7rem;
+	}
+
+	.columnimg:first-child {
+		margin-left: 0;
+	}
+
+	.columnimg:last-child {
+		margin-right: 0;
+	}
+
+	.floatcont .text1 {
+	margin-left:40%;
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		#content-slider .th h1 {
+			font-size: 1.2em;
+			line-height: 1em;
+		}
+
+		#content-slider .th p {
+			font-size: 1.0em;
+			line-height: 0.7em;
+		}
+
+		#content-slider .th a {
+			font-size: 0.55em;
+			line-height: 0.55em;
+		}
+
+		.floatcont {
+
+			height: 650px;
+			width: 450px;
+      margin-left: 18%;
+		}
+
+		.slidefooter {
+
+    width: 50%;
     }
-  
-    .column {
+
+		.floatcont .text1 {
+
+			margin-left:30%;
+		}
+
+    #content-slider .wrap-slider {
+
+		
+		width: 50%;
+
+	}
+
+    .contenido2 .contimgAux{
+    margin-left: 12%;
+    }
+    .contenido3 {
+      height: 110%;
+      margin-bottom: 100px;
+
+    }
+        .contenido3 .contFormAuxMsj {
+
+        width: 50%
+        }
+
+        .contenido3 .contFormAux{
+
+        width: 50%
+    }
+
+    .contenido3 .contFormAuxMsj .boxfloattext4{
+      line-height: 4rem;
+    font-size: 4rem;
+    }
+
+    .contenido3 .contFormAuxMsj .text1{
+    margin-left: 15%
+    }
+
+    .columnsimg{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .columnsimg .columnimg{
+      flex: .9;
+    }
+
+	}
+	@media screen and (max-width: 980px) {
+		#content-slider .th h1 {
+			font-size: 1.2em;
+			line-height: 1em;
+		}
+
+		#content-slider .th p {
+			font-size: 1.0em;
+			line-height: 0.7em;
+		}
+
+		#content-slider .th a {
+			font-size: 0.55em;
+			line-height: 0.55em;
+		}
+
+		.floatcont {
+
+			height: 650px;
+			width: 450px;
+      margin-left: 5%;
+
+		}
+		.slidefooter {
+
+      width: 60%;
+    margin-left: 35%;
+    }
+
+		.floatcont .text1 {
+
+			margin-left:30%;
+		}
+
+		.columns .column  {
+      height: 240px;
+    }
+    #content-slider .wrap-slider {
+
+        
+    width: 60%;
+    margin-left: 35%;
+
+    }
+    .floatcont .boxfloattext1{
+      font-size: 1rem;
+    }
+    .floatcont .boxfloattext2{
+      font-size: .7rem;
+    }
+    .floatcont .boxfloattext3{
+      font-size: 1.5rem;
+    }
+    .floatcont .contlbl{
+      width: 220px;
+    }
+
+ 
+    .contenido2 .contimgAux{
+    margin-left: 10%;
+    
+    }
+
+    .contenido2 .contimgAux .contimg2{
+    width: 250px;
+
+    }
+    .contenido3 {
+      height: 100%;
+      
+    }
+        .contenido3 .contFormAuxMsj {
+    width: 100%
+    }
+
+    .contenido3 .contFormAux{
+      margin-left: 10%;
+    width: 80%;
+    height: 100%;
+    margin-bottom: 100px;
+    }
+
+    .contenido3 .contFormAuxMsj .boxfloattext4{
+    line-height: 4rem;
+    font-size: 4rem;
+    }
+
+    .contenido3 .contFormAuxMsj .text1{
+    margin-left: 20%;
+    }
+
+    .columnsimg .columnimg{
       flex: 1;
-      margin: 2px;
-      padding: 10px;
-      height: 250px;
-  
     }
-  
-    .column:first-child {
+    
+	}  
+	@media screen and (max-width: 680px) {
+
+		#content-slider .slider [class*='title-'] {
+			margin-bottom: -20%;
+		}
+
+		.floatcont {
+
+			height: 400px;
+			width: 100%;
+      margin-top: 720px;
+      margin-left:0;
+      margin-bottom: 130px;
+		}
+
+		.floatcont .text1 {
+
+		font-size: .9rem;
+		line-height: .9rem;
+		margin-left:20%;
+
+		}
+
+		.columns .column  {
+      height: 330px;
+    }
+
+		.wrapper{
+			margin-bottom: 50px;
+		}
+
+    #content-slider .wrap-slider {
+      width: 100%;
+      margin-left:0;
+    }
+
+		.slidefooter {
+    width: 100%;
+    margin-left: 0;
+    }
+
+    .columnsimg{
+      margin-top: 500px;
       margin-left: 0;
-    }
-  
-    .column:last-child {
       margin-right: 0;
     }
-  
-    .floatcont .text1 {
-    margin-left:40%;
+    .columnsimg .columnimg{
+      font-size: .4rem;
+      flex: 1;
     }
-  
-    @media screen and (max-width: 1280px) {
-  
-      #content-slider .th h1 {
-        font-size: 1.2em;
-        line-height: 1em;
-      }
-  
-      #content-slider .th p {
-        font-size: 1.0em;
-        line-height: 0.7em;
-      }
-  
-      #content-slider .th a {
-        font-size: 0.55em;
-        line-height: 0.55em;
-      }
-  
-      .floatcont {
-  
-        height: 650px;
-        width: 450px;
-        margin-left: 18%;
-      }
-  
-      .floatcont .text1 {
-  
-        margin-left:30%;
-      }
-  
-      .columns .column  {
-        height: 240px;
-      }
-      #content-slider .wrap-slider {
-  
-      
-      width: 50%;
-  
+    
+  .contenido2 .contimgAux .classimg{
+    width: 150px;
+	  height: 110px;
     }
-  
-    .contenido .contimg{
-      margin-left: 15%;
-      width: 800px;
-      }
-  
-      .contenido2 .contimgAux{
-      margin-left: 12%;
-      }
-      .contenido3 .contForm {
-        height: 110%;
-  
-  }
-      .contenido3 .contForm .contFormAuxMsj {
-  
-      width: 50%
-      }
-  
-      .contenido3 .contForm .contFormAux{
-  
-        
-      width: 50%
-  }
-  
-  .contenido3 .contForm .contFormAuxMsj .boxfloattext4{
-    line-height: 2em;
-  font-size: 2rem;
-  }
-  
-  .contenido3 .contForm .contFormAuxMsj .text1{
-  margin-left: 15%
-  }
-  
+    .contenido2 .contimgAux{
+    margin-left: 10%;
+ 
     }
-    @media screen and (max-width: 980px) {
-      #content-slider .th h1 {
-        font-size: 1.2em;
-        line-height: 1em;
-      }
-  
-      #content-slider .th p {
-        font-size: 1.0em;
-        line-height: 0.7em;
-      }
-  
-      #content-slider .th a {
-        font-size: 0.55em;
-        line-height: 0.55em;
-      }
-  
-      .floatcont {
-  
-        height: 650px;
-        width: 450px;
-        margin-left: 5%;
-  
-      }
-  
-      .floatcont .text1 {
-  
-        margin-left:30%;
-      }
-  
-      .columns .column  {
-        height: 240px;
-      }
-      #content-slider .wrap-slider {
-  
-          
-      width: 60%;
-      margin-left: 35%;
-  
-      }
-      .floatcont .boxfloattext1{
-        font-size: 1rem;
-      }
-      .floatcont .boxfloattext2{
-        font-size: .7rem;
-      }
-      .floatcont .boxfloattext3{
-        font-size: 1.5rem;
-      }
-      .floatcont .contlbl{
-        width: 220px;
-      }
-      .contenido .contimg{
-      margin-left: 12%;
-      width: 600px;
-      
-      }
-      .contenido2 .contimgAux{
-      margin-left: 10%;
-      
-      }
-  
-      .contenido2 .contimgAux .contimg2{
-      width: 250px;
-  
-      }
-      .contenido3 .contForm {
-height: 130%;
-  }
-      .contenido3 .contForm .contFormAuxMsj {
-        margin-left: 20%;
-  width: 100%
-  }
-  
-  .contenido3 .contForm .contFormAux{
-    margin-left: 20%;
-  width: 60%
-  }
-  
-  .contenido3 .contForm .contFormAuxMsj .boxfloattext4{
-  line-height: 1.5em;
-  font-size: 3rem;
-  }
-  
-  .contenido3 .contForm .contFormAuxMsj .text1{
-  margin-left: 20%;
-  }
-      
-    }  
-    @media screen and (max-width: 680px) {
-  
-      #content-slider .slider [class*='title-'] {
-        margin-bottom: -20%;
-      }
-  
-      .floatcont {
-  
-        height: 400px;
-        width: 100%;
-        margin-top: 720px;
-        margin-left:0;
-        margin-bottom: 130px;
-      }
-  
-      .floatcont .text1 {
-  
-      font-size: .9rem;
-      line-height: .9rem;
-      margin-left:20%;
-  
-      }
-  
-      .columns .column  {
-        height: 330px;
-      }
-  
-      .wrapper{
-        margin-bottom: 50px;
-      }
-  
-      #content-slider .wrap-slider {
-        width: 100%;
-        margin-left:0;
-      }
-      .contenido .contimg{
-      margin-left: 5%;
-      width: 350px;
-      margin-top: 350px;
-      margin-bottom: 150px;
-      }
-      .contenido2 .contimgAux{
-      margin-left: 10%;
-      margin-top: 260px;
-      margin-bottom: 150px;
-      }
-      .contenido2 .contimgAux .contimg2{
-      width: 130px;
-      
-      }
-  
-      .contenido3 .contForm .contFormAux .wrapper{
-        width: 350px;
-      }
-      .contenido3 .contForm {
-height: 120%;
-margin-bottom: 0;
-  }
-      .contenido3 .contForm .contFormAuxMsj {
-        margin-left: 10%;
-  width: 100%
-  }
-  
-  .contenido3 .contForm .contFormAux{
-  
-    margin-left: 2%;
-  width: 100%
-  }
-  
-  .contenido3 .contForm .contFormAuxMsj .boxfloattext4{
-  line-height: 1em;
-  font-size: 2rem;
-  }
-  
-  .contenido3 .contForm .contFormAuxMsj .text1{
-  margin-left: 10%;
-  }
-      .wrapper .boxfloattext1 {
-          font-size:1.5rem;
-        }
-        .wrapper .boxfloattext2 {
-          font-size:1rem;
-        }
-        .wrapper .imgsize{
-        width: 80px;
-        height: 60px;
-        }
-        .wrapper .cssform .labelcl{
-        font-size: .8rem;
-        margin-top: -4px;
-        }
-        .wrapper .cssform .inputcl{
-        width: 90%;
-        padding: 3px 5px;
-        height: 30px;
-        margin-top: -4px;
-        }
-        .wrapper .cssform{
-          padding-top: 1px;
-        }
-        .wrapper .linecl{
-          margin-top: -15px;
-        }
-        .contForm {
-          margin-bottom: 140px;
-        }
-        .wrapper .cssform .inputbt{
-          padding: 3px 5px;
-        height: 30px;
-        width: 90%;
-        }
+    .contenido2 .contimgAux .contimg2{
+    width: 150px;
+    
     }
-    @media screen and (max-width: 380px) {
-      .wrapper{
-        margin-bottom: 100px;
-      }
-  
-      .contenido .contimg{
-      margin-top: 320px;
-      margin-left: 10%;
-      width: 250px;
-      }
-      .contenido2 .contimgAux{
-      margin-left: 5%;
-      margin-top: 200px;
-      margin-bottom: 150px;
-      }
-      .contenido2 .contimgAux .contimg2{
-      width: 100px;
-      
-      }
-      .contenido3 .contForm .contFormAux .wrapper{
-        width: 350px;
-      }
-      .contenido3 .contForm {
-        height: 150%;
-margin-bottom: 0;
-  }
-      .contenido3 .contForm .contFormAuxMsj {
-        margin-left: 5%;
-  width: 100%
-  }
-  
-  .contenido3 .contForm .contFormAux{
-  
-    margin-left: 5%;
-  width: 100%
-  }
-  
-  .contenido3 .contForm .contFormAuxMsj .boxfloattext4{
-  line-height: 1em;
-  font-size: 1.5rem;
-  }
-  
-  .contenido3 .contForm .contFormAuxMsj .text1{
-  margin-left: 10%;
-  }
-      .wrapper .boxfloattext1 {
-          font-size:1.5rem;
-        }
-        .wrapper .boxfloattext2 {
-          font-size:1rem;
-        }
-        .wrapper .imgsize{
-        width: 80px;
-        height: 60px;
-        }
-        .wrapper .cssform .labelcl{
-        font-size: .8rem;
-        margin-top: -4px;
-        }
-        .wrapper .cssform .inputcl{
-        width: 90%;
-        padding: 3px 5px;
-        height: 30px;
-        margin-top: -4px;
-        }
-        .wrapper .cssform{
-          padding-top: 1px;
-        }
-        .wrapper .linecl{
-          margin-top: -15px;
-        }
-        .contForm {
-          margin-bottom: 140px;
-        }
-        .wrapper .cssform .inputbt{
-          padding: 3px 5px;
-        height: 30px;
-        width: 90%;
-        }
-    }  
 
-    @media screen and (max-width: 310px) {
-      .wrapper{
-        margin-bottom: 100px;
-      }
-  
-      .contenido .contimg{
-      margin-top: 320px;
-      margin-left: 10%;
-      width: 250px;
-      }
-      .contenido2 .contimgAux{
-      margin-left: 5%;
-      margin-top: 200px;
-      margin-bottom: 150px;
-      }
-      .contenido2 .contimgAux .contimg2{
-      width: 100px;
-      
-      }
-      .contenido3 .contForm .contFormAux .wrapper{
-        width: 350px;
-      }
-      .contenido3 .contForm {
-        height: 130%;
-margin-bottom: 0;
-  }
-      .contenido3 .contForm .contFormAuxMsj {
-        margin-left: 5%;
-  width: 100%
-  }
-  
-  .contenido3 .contForm .contFormAux{
-  
-    margin-left: 5%;
-  width: 100%
-  }
-  
-  .contenido3 .contForm .contFormAuxMsj .boxfloattext4{
-  line-height: 1em;
-  font-size: 1.5rem;
-  }
-  
-  .contenido3 .contForm .contFormAuxMsj .text1{
-  margin-left: 10%;
-  }
-      .wrapper .boxfloattext1 {
-          font-size:1.5rem;
-        }
-        .wrapper .boxfloattext2 {
-          font-size:1rem;
-        }
-        .wrapper .imgsize{
-        width: 80px;
-        height: 60px;
-        }
-        .wrapper .cssform .labelcl{
-        font-size: .8rem;
-        margin-top: -4px;
-        }
-        .wrapper .cssform .inputcl{
-        width: 90%;
-        padding: 3px 5px;
-        height: 30px;
-        margin-top: -4px;
-        }
-        .wrapper .cssform{
-          padding-top: 1px;
-        }
-        .wrapper .linecl{
-          margin-top: -15px;
-        }
-        .contForm {
-          margin-bottom: 140px;
-        }
-        .wrapper .cssform .inputbt{
-          padding: 3px 5px;
-        height: 30px;
-        width: 90%;
-        }
-    }  
-
-    .boxfloattext1 {
-      font-size:1.5rem;
-    }
-    .boxfloattext2 {
-      font-size:1rem;
-    }
-    .boxfloattext3 {
-      font-size:2rem;
-      font-weight: bold;
-    }
-    .contlbl{
-      width: 300px;
-    }
-    .contenido{
-      width: 100%; 
-      margin-top: 100px; 
-      margin-bottom: 100px; 
+    .contenido3 {
       height: 100%;
-      position: absolute;
+    }   
+    .contenido3 .contFormAuxMsj {
+    width: 100%
     }
-    .contimg{
-      margin-left: 20%;
+
+    .contenido3 .contFormAux{
+    margin-left: 5%;
+    width: 350px;
+    height: 430px;
+    margin-bottom: 110px;
     }
-    .contenido2{
-      
-      margin-bottom: 350px; 
-  
+
+    .contenido3 .contFormAuxMsj .boxfloattext4{
+    line-height: 2rem;
+    font-size: 2rem;
     }
-    .contimgAux{
-      float: left; 
-      margin-left: 20%;
+
+    .contenido3 .contFormAuxMsj .text1{
+    margin-left: 10%;
+    }
+
+    .wrapper .boxfloattext1 {
+        font-size:1.5rem;
+      }
+      .wrapper .boxfloattext2 {
+        font-size:1rem;
+      }
+      .wrapper .imgsize{
+      width: 80px;
+      height: 60px;
+      }
+      .wrapper .cssform .labelcl{
+      font-size: .8rem;
+      margin-top: -4px;
+      }
+      .wrapper .cssform .inputcl{
+      width: 90%;
+      padding: 3px 5px;
+      height: 30px;
+      margin-top: -4px;
+      }
+      .wrapper .cssform{
+        padding-top: 1px;
+      }
+      .wrapper .linecl{
+        margin-top: -15px;
+      }
+
+      .wrapper .cssform .inputbt{
+        padding: 3px 5px;
+      height: 30px;
+      width: 90%;
+      }
+
+  .columnsimg .columnimg .imageclss1{
+
+    width: 40px;
+
+  }
+  .columnsimg .columnimg .imageclss2{
+
+    width: 100px;
+
+  }
+  .columnsimg .columnimg .imageclss3{
+
+    width: 30px;
+
+  }
+  .columnsimg .columnimg .imageclss4{
+ 
+    width: 20px;
+
+  }
+  .columnsimg .columnimg .imageclss5{
+
+    width: 30px;
+
+  }
+  .columnsimg .columnimg .imageclss6{
+
+    width: 60px;
+
+  }
+  .contenido3 .contFormAux .wrapper .boxfloattext5 {
+    font-size:.7rem;
+  }
+
+	}
+	@media screen and (max-width: 370px) {
+		.wrapper{
+			margin-bottom: 100px;
+		}
+
+    .contenido2 .contimgAux{
+    margin-left: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+    .contenido2 .contimgAux .contimg2{
+    width: 100px;
+    
     }
     .contenido3{
-      width: 100%;      
-      height: 100%;
-      position: absolute;
-      background-image: url('assets/img/8.jpg');
-      background-repeat:no-repeat;
-      background-position: 100% 50%;
-        background-size: 100%;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .contenido3 .contFormAux{
+
+      margin-left: 0;
+    }
+
+    .wrapper .boxfloattext1 {
+        font-size:1.5rem;
+      }
+      .wrapper .boxfloattext2 {
+        font-size:1rem;
+      }
+      .wrapper .imgsize{
+      width: 80px;
+      height: 60px;
+      }
+      .wrapper .cssform .labelcl{
+      font-size: .8rem;
+      margin-top: -4px;
+      }
+      .wrapper .cssform .inputcl{
+      width: 90%;
+      padding: 3px 5px;
+      height: 30px;
+      margin-top: -4px;
+      }
+      .wrapper .cssform{
+        padding-top: 1px;
+      }
+      .wrapper .linecl{
+        margin-top: -15px;
+      }
+      .contForm {
+        margin-bottom: 140px;
+      }
+      .wrapper .cssform .inputbt{
+        padding: 3px 5px;
+      height: 30px;
+      width: 90%;
+      }
+      .columnsimg{
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .columnsimg .columnimg{
+      font-size: .3rem;
+      flex: 1;
+      }
+
+      .columnsimg .columnimg .imageclss1{
+
+      width: 30px;
+
+      }
+      .columnsimg .columnimg .imageclss2{
+
+      width: 50px;
+
+      }
+      .columnsimg .columnimg .imageclss3{
+
+      width: 20px;
+
+      }
+      .columnsimg .columnimg .imageclss4{
+
+      width: 25px;
+
+      }
+      .columnsimg .columnimg .imageclss5{
+
+      width: 30px;
+
+      }
+      .columnsimg .columnimg .imageclss6{
+
+      width: 40px;
+
+      }
+      .contFormAux .wrapper .boxfloattext5 {
+          font-size:.6rem;
+        }
+  
+	}  
+
+
+  .boxfloattext1 {
+    font-size:1.5rem;
   }
+  .boxfloattext2 {
+    font-size:1rem;
+  }
+  .boxfloattext3 {
+    font-size:2rem;
+    font-weight: bold;
+  }
+  .contFormAux .wrapper .boxfloattext5 {
+    font-size:1rem;
+  }
+  .contlbl{
+    width: 300px;
+  }
+  .contenido{
+    
+    margin-top: 100px; 
+    margin-bottom: 50px; 
+
+  }
+  .contimg{
+    margin-left: 20%;
+  }
+  .contenido2{
+    
+    margin-bottom: 350px; 
+
+  }
+  .contimgAux{
+    float: left; 
+    margin-left: 20%;
+  }
+
   input[type=text], select {
   width: 100%;
   padding: 5px 8px;
@@ -515,7 +506,7 @@ margin-bottom: 0;
   box-sizing: border-box;
   color: #666;
   }
-  
+
   input[type=submit] {
   width: 100%;
   background-color: #FC4F17;
@@ -526,93 +517,150 @@ margin-bottom: 0;
   border-radius: 4px;
   cursor: pointer;
   }
-  
+
   input[type=submit]:hover {
   background-color: #FC4F17;
   }
-  
-  .cssform {
-  padding: 20px;
-  color: white;
-  }
-  
-  ::placeholder {
-  color:darkgrey;
-  opacity: 1; /* Firefox */
-  font-size: 14px;
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: darkgrey;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-  color: darkgrey;
-  }
-  .contForm {
-      height: 100%;
-      width: 100%;
 
+.cssform {
+padding: 20px;
+color: white;
+}
+
+::placeholder {
+color:darkgrey;
+opacity: 1; /* Firefox */
+font-size: 14px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: darkgrey;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+color: darkgrey;
+}
+.contForm {
+    height: 100%;
+    width: 100%;
+
+  }
+ 
+  .wrapper {
+    padding: 5px;
+    max-width: 960px;
+    width: 100%;
+    height: 100%;
+    background-color:#b93606;
+    
+  }
+
+  .imgsize{
+      width: 150px;
+      height: 100px;
     }
-    .contFormAux {
-      margin-top: 100px; 
-      width: 40%
+    .hspace{
+      margin-top: 40px
     }
-    .contFormAuxMsj {
-  
-      width: 60%;
-      padding: 5px;
-      margin: 20px auto;
-      color: #ffffff;
+    .boxfloattext4 {
+    font-size:5rem;
+    line-height: 5rem;
+    
+  }
+  .text1 {
+	font-size: 1rem;
+	line-height: 1rem;
+	margin-left:30%;
+	}
+  .classimg{
+    content:url('assets/img/cedro3602.png');
+    width: 250px;
+	height: 180px;
+  }
+  .classimg:hover{
+    content:url('assets/img/cedro360.png');
+    width: 250px;
+	height: 180px;
+  }
+  .imageclss1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+
+  }
+  .imageclss2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+
+  }
+  .imageclss3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+
+  }
+  .imageclss4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35px;
+
+  }
+  .imageclss5{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+
+  }
+  .imageclss6{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+
+  }
+  .contenido3{
+    
+    margin-top: 116px; 
+    height: 700px;
+    width: 100%;
     }
-    .wrapper {
-      padding: 5px;
-      max-width: 960px;
-      width: 100%;
-      margin: 20px auto;
-     
-      height: 100%;
-      background-color:#b93606;
-      
-    }
-  
-    .imgsize{
-        width: 150px;
-        height: 100px;
-      }
-      .hspace{
-        margin-top: 40px
-      }
-      .boxfloattext4 {
-      font-size:5rem;
-      line-height: 5rem;
-      
-    }
-    .text1 {
-    font-size: 1rem;
-    line-height: 1rem;
-    margin-left:30%;
-    }
+    
+  .contFormAux {
+    height: 700px;
+    width: 40%
+  }
+  .contFormAuxMsj {
+
+    width: 60%;
+    height: 700px;
+    padding: 5px;
+    color: #ffffff;
+    background-image: url('assets/img/8.jpg');
+    background-repeat:no-repeat;
+    background-position: 100% 50%;
+    background-size: 100% 700px;
+  }
   </style>
 
 <div class="contenido3">
-    <div class="contForm"> 
-
-        <div class="contFormAuxMsj" style="float: left;">
-            <div style="margin-top: 10%">
-                <div class="boxfloattext4" style="margin-left:15%;"><span style="font-weight:bolder;">SE VIVE</span></div>
-                <div class="boxfloattext4" style="margin-left:15%;"><span style="font-weight:bolder;">BIEN</span> Y SI</div>
-                <div class="boxfloattext4" style="margin-left:15%;">TE ALCANZA</div>
-                <div class="text1"><a routerLink="/agendarcita" class="rk-menu__link">
-                  <div style="border-radius: 15px;background:#b93606;width: 200px;height: 40px; border:4px solid #b93606;text-align:center;padding: 5px;margin-top: 1rem;margin-left: 2rem;">Agendar cita</div></a></div>
-                 
-              </div>
-        </div>
-
-
-        <div class="contFormAux" style="float: left;">
-    
-          <div class="wrapper">
+    <div class="contFormAuxMsj" style="float: left;"> 
+        <div style="margin-top: 10%">
+            <div class="boxfloattext4" style="margin-left:15%;"><span style="font-weight:bolder; font-family: 'Arial Black', Gadget, sans-serif;">SE VIVE</span></div>
+            <div class="boxfloattext4" style="margin-left:15%;"><span style="font-weight:bolder; font-family: 'Arial Black', Gadget, sans-serif;">BIEN</span><span style="font-weight:600;"> Y SI</span></div>
+            <div class="boxfloattext4" style="margin-left:15%;"><span style="font-weight:600;">TE ALCANZA</span></div>
+            <div class="text1"><a routerLink="/agendarcita" class="rk-menu__link">
+              <div style="border-radius: 15px;background:#b93606;width: 200px;height: 40px; border:4px solid #b93606;text-align:center;padding: 5px;margin-top: 1rem;margin-left: 2rem;">Agendar cita</div></a></div>
+             
+          </div>
+    </div>
+    <div class="contFormAux" style="float: left;"> 
+        <div class="wrapper">
             <div class="hspace">
 
               <div style="text-align: center; color: white; text-align: center;">
@@ -645,7 +693,7 @@ margin-bottom: 0;
                 </div>  
               </div> 
           </div>
-        </div>   
-      </div> 
+    </div>
+
 </div>
   
